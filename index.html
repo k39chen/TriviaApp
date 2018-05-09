@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title>Trivia</title>
+
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+
+    <script type="text/javascript" src="underscore.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div id="home" class="screen">
+        <div class="bg">
+            <div class="panel" data-value="1"></div>
+            <div class="panel" data-value="2"></div>
+            <div class="panel" data-value="3"></div>
+            <div class="panel" data-value="4"></div>
+            <div class="panel" data-value="5"></div>
+        </div>
+        <div class="wrapper">
+            <div class="title">Trivia Night</div>
+            <div class="subtitle">
+                <em>Hosted By:</em><br />
+                Suchintan Singh,<br />
+                Alexander Anam,<br />
+                John Nguyen,<br />
+                Kevin Chen
+            </div>
+            <button class="start-game-btn">Start Game</button>
+        </div>
+        <div class="teams-container">
+            <div class="teams-list"></div>
+
+            <span class="team-name-input-group">
+                <input class="team-name-value" type="text" placeholder="Enter team name" />
+                <button class="add-team-btn">+</button>
+            </span>
+        </div>
+    </div>
+
+    <div id="board" class="screen">
+        <div class="scores">
+            <button class="back-btn">&lt;</button>
+            <div class="score-list"></div>
+            <button class="finish-btn">&gt;</button>
+        </div>
+        <div class="questions"></div>
+    </div>
+
+    <div id="bonus" class="screen">
+        <button class="back-btn">&lt;</button>
+        <button class="finish-btn">&gt;</button>
+        <div class="wrapper">
+            <div class="title">Bonus Question</div>
+            <div class="text">Identify as many song names as possible. <br />Each correct song name is worth 100 points.</div>
+            <div>
+                <audio class="bonus-audio" controls preload="none">
+                    <source src="media/Mix.m4a" type="audio/mp4" />
+                </audio>
+            </div>
+            <button class="show-answer-btn">Show Answer</button>
+
+            <div class="answers">
+                <div class="answer-line">
+                    <span class="track">1.</span>
+                    <span class="title">Shake It Off -</span>
+                    <span class="artist">Taylor Swift</span>
+                    <audio controls preload="none"><source src="media/T-S.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">2.</span>
+                    <span class="title">Single Ladies -</span>
+                    <span class="artist">Beyonce</span>
+                    <audio controls preload="none"><source src="media/B-S.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">3.</span>
+                    <span class="title">Let It Be -</span>
+                    <span class="artist">Beatles</span>
+                    <audio controls preload="none"><source src="media/B-L.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">4.</span>
+                    <span class="title">Oops!... I Did It Again -</span>
+                    <span class="artist">Britney Spears</span>
+                    <audio controls preload="none"><source src="media/BS-O.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">5.</span>
+                    <span class="title">Careless Whisper -</span>
+                    <span class="artist">George Michael</span>
+                    <audio controls preload="none"><source src="media/G-C.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">6.</span>
+                    <span class="title">Gold Digger -</span>
+                    <span class="artist">Kanye West</span>
+                    <audio controls preload="none"><source src="media/K-G.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">7.</span>
+                    <span class="title">Ridin’ (or Ridin’ Dirty) -</span>
+                    <span class="artist">Chamillionaire</span>
+                    <audio controls preload="none"><source src="media/K-R.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">8.</span>
+                    <span class="title">Beat It -</span>
+                    <span class="artist">Michael Jackson</span>
+                    <audio controls preload="none"><source src="media/M-B.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">9.</span>
+                    <span class="title">Treat You Better -</span>
+                    <span class="artist">Shawn Mendes</span>
+                    <audio controls preload="none"><source src="media/S-T.m4a" /></audio>
+                </div>
+                <div class="answer-line">
+                    <span class="track">10.</span>
+                    <span class="title">Friend Like Me -</span>
+                    <span class="artist">Aladdin (Performed by Robin Williams)</span>
+                    <audio controls preload="none"><source src="media/Movie_song.m4a" /></audio>
+                </div>
+            </div>
+        </div>
+        <div class="scores"></div>
+    </div>
+
+    <div id="scores" class="screen">
+        <div class="bg">
+            <div class="panel" data-value="1"></div>
+            <div class="panel" data-value="2"></div>
+            <div class="panel" data-value="3"></div>
+            <div class="panel" data-value="4"></div>
+            <div class="panel" data-value="5"></div>
+        </div>
+        <button class="back-btn">&lt;</button>
+        <div class="wrapper">
+            <div class="title">Leaderboard</div>
+            <div class="scores"></div>
+        </div>
+    </div>
+
+    <!-- this will show the active question -->
+    <div id="question">
+        <button class="back-btn">&lt;</button>
+        <div class="title"></div>
+        <div class="timer">
+            <span class="time">60 seconds</span>
+            <button class="start-btn">Start</button>
+            <button class="stop-btn">Stop</button>
+        </div>
+        <div class="scores"></div>
+        <div class="wrapper">
+            <div class="subtitle subtitle-q">Question</div>
+            <div class="text-container">
+                <div class="text"></div>
+                <div class="choices"></div>
+            </div>
+
+            <button class="show-answer-btn">Show Answer</button>
+
+            <div class="subtitle subtitle-a">Answer</div>
+            <div class="answer"></div>
+
+            <div class="subtitle subtitle-f">Fun Fact</div>
+            <div class="fact"></div>
+
+            <button class="close-btn">Back to Questions</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

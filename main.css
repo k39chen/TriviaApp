@@ -1,0 +1,619 @@
+/** FONTS **/
+@font-face { font-family: "ProximaNova"; src: url("fonts/ProximaNova-Regular.otf"); }
+@font-face { font-family: "ProximaNovaLt"; src: url("fonts/ProximaNova-Light.otf"); }
+@font-face { font-family: "ProximaNovaBd"; src: url("fonts/ProximaNova-Semibold.otf"); }
+
+* {
+    user-select: none;
+}
+
+/** COMMON STYLES **/
+html {
+    font-family: "ProximaNova";
+    font-size: 32px;
+    color: white;
+}
+button {
+    transition: background 0.2s, opacity 0.2s;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    margin: 24px auto 0 auto;
+    padding: 16px 24px;
+    color: white;
+    background: rgba(255,255,255,0.25);
+    opacity: 1.0;
+    font-size: 32px;
+    font-family: "ProximaNova";
+    border: none;
+    border-radius: 3px;
+}
+button:hover {
+    background: rgba(255,255,255,0.4);
+}
+input[type="text"] {
+    outline: none;
+    width: 100%;
+    height: 64px;
+    padding: 12px 16px;
+    font-size: 24px;
+    border: solid 1px #d7d7d7;
+    color: #595959;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+input[type="text"]:active, input[type="text"]:focus {
+    border-color: #329aea;
+}
+.screen {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/** HOME STYLES **/
+#home {
+    display: table;
+    color: #595959;
+}
+#home > .wrapper {
+    transition: opacity 0.5s;
+    position: relative;
+    z-index: 1000;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#home > .wrapper > .title {
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 96px;
+    margin-bottom: 24px;
+}
+#home > .wrapper > .subtitle {
+    line-height: 1.25em;
+    margin-bottom: 48px;
+    color: #999;
+}
+#home > .wrapper > .subtitle > em {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+}
+#home button {
+    background: #f89728;
+}
+#home button:hover {
+    opacity: 0.7;
+}
+#home .teams-container {
+    transition: opacity 0.5s;
+    position: absolute;
+    z-index: 1000;
+    top: 12px;
+    right: 24px;
+    text-align: right;
+}
+#home .teams-container > .teams-list {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+#home .teams-container > .teams-list > .team {
+    line-height: 1.25em;
+}
+#home .teams-container > .teams-list > .team > .remove-btn {
+    transition: color 0.2s;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    margin-right: 16px;
+    font-weight: 800;
+    font-family: "ProximaNovaBd";
+    color: #b2b2b2;
+}
+#home .teams-container > .teams-list > .team > .remove-btn:hover {
+    color: #ef8166;
+}
+#home .teams-container > .teams-list > .team > .index {
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+}
+#home .teams-container > .team-name-input-group {
+    overflow: hidden;
+    display: inline-block;
+    text-align: right;
+}
+#home .teams-container > .team-name-input-group > input.team-name-value {
+    float: left;
+    width: 320px;
+    border-radius: 12px 0 0 12px;
+}
+#home .teams-container > .team-name-input-group > button.add-team-btn {
+    display: inline-block;
+    float: left;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    background: #329aea;
+    border-radius: 0 12px 12px 0;
+}
+#home > .bg {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    opacity: 0.25;
+}
+#home > .bg > .panel {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#home > .bg > .panel[data-value="1"] { background: #f89728; }
+#home > .bg > .panel[data-value="2"] { background: #329aea; }
+#home > .bg > .panel[data-value="3"] { background: #ef8166; }
+#home > .bg > .panel[data-value="4"] { background: #6eba83; }
+#home > .bg > .panel[data-value="5"] { background: #b95cf7; }
+
+/** BOARD STYLES **/
+#board {
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    box-sizing: border-box;
+}
+#board > .scores {
+    position: relative;
+    height: 160px;
+}
+#board > .scores > button {
+    position: absolute;
+    top: calc((160px - 64px) / 2);
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    background: #999;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+#board > .scores > button.back-btn {
+    left: 24px;
+}
+#board > .scores > button.finish-btn {
+    right: 24px;
+}
+#board > .scores > button:hover {
+    opacity: 1.0;
+}
+#board > .scores > .score-list {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    height: 160px;
+    box-sizing: border-box;
+}
+#board > .scores > .score-list > .score {
+    display: table;
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #595959;
+    box-sizing: border-box;
+}
+#board > .scores > .score-list > .score:nth-child(even) {
+    background: #f2f2f2;
+}
+#board > .scores > .score-list > .score:first-child {
+    border-left: none;
+}
+#board > .scores > .score-list > .score > .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+#board > .scores > .score-list > .score > .wrapper > .name {
+    margin-bottom: 12px;
+    font-family: "ProximaNova";
+    font-weight: 100;
+    color: #999;
+}
+#board > .scores > .score-list > .score > .wrapper > .value {
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 48px;
+}
+#board > .questions {
+    height: calc(100% - 160px);
+    text-transform: uppercase;
+}
+#board > .questions > .category {
+    float: left;
+    box-sizing: border-box;
+}
+#board > .questions > .category > .title,
+#board > .questions > .category > .question {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+#board > .questions > .category > .title > .wrapper,
+#board > .questions > .category > .question > .wrapper {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    border: solid 1px transparent;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+#board > .questions > .category > .title > .wrapper {
+    color: rgba(255,255,255,0.75);
+}
+#board > .questions > .category > .question > .wrapper {
+    transition: opacity 0.2s;
+    cursor: pointer;
+    font-size: 64px;
+    opacity: 1.0;
+}
+#board > .questions > .category > .question > .wrapper.masked {
+    opacity: 0.3;
+}
+#board > .questions > .category > .question > .wrapper:not(.masked):hover {
+    opacity: 0.8;
+}
+
+/** QUESTION STYLES **/
+#question {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#question > .back-btn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+#question > .title {
+    position: absolute;
+    left: 0;
+    bottom: -128px;
+    font-size: 128px;
+    font-weight: 800;
+    font-family: "ProximaNovaBd";
+    transform: rotate(270deg);
+    transform-origin: left top;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+#question > .timer {
+    overflow: hidden;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+#question > .timer > .time {
+    float: left;
+    line-height: 64px;
+    margin-right: 12px;
+}
+#question > .timer > button {
+    float: left;
+    margin-top: 0;
+}
+#question > .wrapper {
+    display: table-cell;
+    line-height: 1.25em;
+    padding: 0 15%;
+    vertical-align: middle;
+    text-align: center;
+}
+#question > .wrapper > .title,
+#question > .wrapper > .subtitle {
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 24px;
+}
+#question > .wrapper > .subtitle {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+#question > .wrapper > .text-container {
+    display: inline-block;
+    margin-bottom: 32px;
+    text-align: left;
+}
+#question > .wrapper > .text-container > audio {
+    width: 100%;
+    margin-top: 24px;
+}
+#question > .wrapper > .text-container > .choices {
+    margin-top: 24px;
+    margin-left: 24px;
+}
+#question > .wrapper > .text-container > .choices > .choice {
+    transition: opacity 0.2s;
+    opacity: 1.0;
+}
+#question > .wrapper > .text-container > .choices > .choice > em {
+    opacity: 0.8;
+}
+
+#question > .wrapper > .text-container > .choices.answer {
+}
+#question > .wrapper > .text-container > .choices.answer > .choice {
+    opacity: 0.25;
+}
+#question > .wrapper > .text-container > .choices.answer > .choice.answer {
+    opacity: 1.0;
+}
+
+#question > .wrapper > .fact {
+    margin-bottom: 48px;
+}
+#question > .wrapper > .answer {
+    margin-bottom: 96px;
+}
+
+#question > .scores {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+#question > .scores button {
+    width: 100%;
+    margin: 0 0 12px 0;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+}
+#question > .scores button:hover {
+    background: rgba(255,255,255,0.3);
+}
+#question > .scores button.active {
+    background: rgba(255,255,255,0.5);
+}
+#question > .scores button.active:hover {
+    background: rgba(255,255,255,0.7);
+}
+#question > .scores > span.team.half-allowed {
+    overflow: hidden;
+    display: block;
+    float: right;
+    clear: both;
+}
+#question > .scores > span.team.half-allowed > .label {
+    float: left;
+    line-height: 64px;
+    margin-right: 12px;
+}
+#question > .scores > span.team.half-allowed > .half {
+    float: left;
+    width: 120px;
+    border-radius: 3px 0 0 3px;
+}
+#question > .scores > span.team.half-allowed > .full {
+    float: left;
+    width: 120px;
+    border-radius: 0 3px 3px 0;
+}
+
+/** BONUS STYLES **/
+#bonus {
+    position: relative;
+    background: #f89728;
+    text-align: center;
+}
+#bonus > button {
+    position: absolute;
+    top: calc((160px - 64px) / 2);
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+#bonus > button.back-btn {
+    left: 24px;
+}
+#bonus > button.finish-btn {
+    right: 24px;
+}
+#bonus > .wrapper {
+    display: table-cell;
+    padding: 0 15%;
+    vertical-align: middle;
+}
+#bonus > .wrapper > .title {
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 24px;
+}
+#bonus > .wrapper > .text {
+    display: inline-block;
+    margin-bottom: 32px;
+    text-align: left;
+}
+#bonus > .wrapper > .answers {
+}
+#bonus > .wrapper > .answers > .answer-line {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 24px;
+    text-align: left;
+}
+#bonus > .wrapper > .answers > .answer-line > .track {
+}
+#bonus > .wrapper > .answers > .answer-line > .artist {
+}
+#bonus > .wrapper > .answers > .answer-line > .title {
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+}
+#bonus > .wrapper > .answers > .answer-line > audio {
+    float: left;
+    width: 96px;
+    margin-right: 12px;
+}
+#bonus > .scores {
+    position: absolute;
+    top: 160px;
+    right: 24px;
+    padding: 24px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 12px;
+}
+#bonus > .scores > .team {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+#bonus > .scores > .team:last-child {
+    margin-bottom: 0;
+}
+#bonus > .scores > .team > .name {
+    float: right;
+    line-height: 64px;
+    margin-right: 12px;
+}
+#bonus > .scores > .team > .value {
+    float: right;
+    width: 120px;
+    text-align: right;
+}
+
+/** SCORES STYLES **/
+#scores {
+    color: #595959;
+    text-align: center;
+}
+#scores > .back-btn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    padding: 0;
+    background: rgba(100,100,100,0.3);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+#scores .back-btn:hover {
+    background: rgba(100,100,100,0.5);
+}
+#scores > .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15%;
+}
+#scores > .wrapper > .title {
+    margin-bottom: 24px;
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 48px;
+    color: #999;
+}
+#scores > .wrapper > .scores {}
+#scores > .wrapper > .scores > .team {
+    overflow: hidden;
+    height: 48px;
+    line-height: 48px;
+    font-family: "ProximaNovaBd";
+    font-weight: 800;
+    font-size: 32px;
+    border-bottom: solid 1px #d7d7d7;
+}
+#scores > .wrapper > .scores > .team:nth-child(1) {
+    height: 128px;
+    line-height: 128px;
+    font-size: 96px;
+}
+#scores > .wrapper > .scores > .team:nth-child(2) {
+    height: 96px;
+    line-height: 96px;
+    font-size: 64px;
+}
+#scores > .wrapper > .scores > .team:nth-child(3) {
+    height: 64px;
+    line-height: 64px;
+    font-size: 48px;
+}
+#scores > .wrapper > .scores > .team:last-child {
+    border-bottom: none;
+}
+#scores > .wrapper > .scores > .team > .name {
+    float: left;
+}
+#scores > .wrapper > .scores > .team > .score {
+    float: right;
+}
+
+#scores > .bg {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    opacity: 0.25;
+}
+#scores > .bg > .panel {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#scores > .bg > .panel[data-value="1"] { background: #f89728; }
+#scores > .bg > .panel[data-value="2"] { background: #329aea; }
+#scores > .bg > .panel[data-value="3"] { background: #ef8166; }
+#scores > .bg > .panel[data-value="4"] { background: #6eba83; }
+#scores > .bg > .panel[data-value="5"] { background: #b95cf7; }
+
+/** HOME SCREEN MANAGEMENT **/
+#home.active { display: table; }
+#home:not(.active) { display: none; }
+
+/** BOARD SCREEN MANAGEMENT **/
+#board.active { display: block; }
+#board:not(.active) { display: none; }
+
+/** BONUS SCREEN MANAGEMENT **/
+#bonus.active { display: table; }
+#bonus:not(.active) { display: none; }
+
+/** SCORES SCREEN MANAGEMENT **/
+#scores.active { display: table; }
+#scores:not(.active) { display: none; }
