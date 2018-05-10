@@ -5,6 +5,12 @@ window.questionTimer = null;
 window.questionTimerTick = 0;
 
 $(document).ready(function() {
+    $(window).on("mousemove", function(ev) {
+        $("#cursor").css({
+            left: ev.pageX - 12,
+            top: ev.pageY - 12
+        });
+    });
     $("#home > .teams-container").on("click", "> .team-name-input-group > .add-team-btn", function() {
         var $input = $(this).closest(".teams-container").find("> .team-name-input-group > input.team-name-value");
         var teamName = $.trim($input.val());

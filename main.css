@@ -13,6 +13,12 @@ html {
     font-size: 32px;
     color: white;
 }
+#cursor {
+    position: fixed;
+    z-index: 100000;
+    pointer-events: none;
+    width: 96px;
+}
 button {
     transition: background 0.2s, opacity 0.2s;
     cursor: pointer;
