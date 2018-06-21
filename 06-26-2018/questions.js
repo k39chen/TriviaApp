@@ -160,7 +160,7 @@ window.questions = {
             timer: 60,
             q: {
                 type: "text",
-                text: "According to an old saying, you should “let sleeping dogs” do what?",
+                text: "According to an old saying, you should \"let sleeping dogs\" do what?",
             },
             a: "Lie"
         },
@@ -282,7 +282,7 @@ window.questions = {
             timer: 60,
             q: {
                 type: "text",
-                text: "What does the French word \"bibliothèque\" mean in English?"
+                text: "What does the French word \"bibliotheque\" mean in English?"
             },
             a: "Library"
         },
