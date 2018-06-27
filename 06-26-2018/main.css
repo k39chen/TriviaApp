@@ -10,7 +10,7 @@
 /** COMMON STYLES **/
 html {
     font-family: "ProximaNova";
-    font-size: 32px;
+    font-size: 36px;
     color: white;
 }
 #cursor {
@@ -159,7 +159,7 @@ input[type="text"]:active, input[type="text"]:focus {
     height: 100%;
     transform: rotate(45deg);
     transform-origin: top left;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 #home > .bg > .panel {
     float: left;

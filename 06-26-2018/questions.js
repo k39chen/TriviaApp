@@ -194,7 +194,7 @@ window.questions = {
             timer: 60,
             q: {
                 type: "choice",
-                text: "What classic cartoon character’s catchphrase refers to a dish of corn and lima beans?",
+                text: "What classic cartoon character's catchphrase refers to a dish of corn and lima beans?",
                 choices: [
                     "Sylvester the Cat",
                     "Popeye",
@@ -238,7 +238,7 @@ window.questions = {
             timer: 60,
             q: {
                 type: "choice",
-                text: "What country’s longest mountain range is named for a color?",
+                text: "What country's longest mountain range is named for a color?",
                 choices: [
                     "Cuba",
                     "Dominican Republic",
