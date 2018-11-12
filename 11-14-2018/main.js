@@ -355,8 +355,8 @@ $(document).ready(function() {
 
         _.each(bonusQuestions.tracks, function(track, index) {
             var $track = $("<div class='answer-line' />").appendTo($answers);
-            var $index = $("<span class='track' />").append((index + 1) + ".").appendTo($track);
-            var $title = $("<span class='title' />").append(track.title + " -").appendTo($track);
+            var $index = $("<span class='track' />").append((index + 1) + ". ").appendTo($track);
+            var $title = $("<span class='title' />").append(track.title + " - ").appendTo($track);
             var $artist = $("<span class='artist' />").append(track.artist).appendTo($track);
         });
     }
@@ -381,7 +381,7 @@ $(document).ready(function() {
         var category = questions[categoryId];
         var question = category[questionId];
 
-        $title.text(category.category);
+        $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
 
         $scores.css({ display: "none" });
 
@@ -406,6 +406,10 @@ $(document).ready(function() {
                 case 3: prefix = "D) "; break;
                 case 4: prefix = "E) "; break;
                 case 5: prefix = "F) "; break;
+                case 6: prefix = "G) "; break;
+                case 9: prefix = "H) "; break;
+                case 10: prefix = "I) "; break;
+                case 11: prefix = "K) "; break;
                 default: break;
                 }
                 var $choice = $("<div class='choice' data-value='" + choice + "'><em>" + prefix + "</em>" + choice + "</div>");

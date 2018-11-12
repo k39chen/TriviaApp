@@ -14,66 +14,56 @@ window.questions = {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Which of these measurements from the sports world is the largest?",
+                "text": "Which of these sports has the fewest number of players on the field at one time?",
                 "choices": [
-                    "Width of NFL field",
-                    "Home plate to first base",
-                    "Length of NBA court"
+                    "Baseball",
+                    "American football",
+                    "Soccer"
                 ]
             },
-            "a": "Width of NFL field"
+            "a": "Baseball",
+            "f": "9 people on the field"
         },
         "200": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "In basketball, where would you find the \"top of the key\"?",
-                "choices": [
-                    "Free throw circle",
-                    "Center of the court",
-                    "On the backboard"
-                ]
+                "type": "text",
+                "text": "Who set the NHL record for goals by a rookie born in the United States?"
             },
-            "a": "Free throw circle"
+            "a": "Auston Matthews"
         },
         "300": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "According to the official FIFA rulebook, how long can a goalkeeper hold onto the ball for?",
-                "choices": [
-                    "3 Seconds",
-                    "5 Seconds",
-                    "10 Seconds"
-                ]
+                "type": "text",
+                "text": "In what sport does a jammer score a point for each opponent they skate past?"
             },
-            "a": "5 Seconds"
+            "a": "Roller derby"
         },
         "400": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Which of these NBA teams was once located in Minnesota?",
+                "text": "Who was the first golfer to win the Masters Tournament two years in a row?",
                 "choices": [
-                    "Lakers",
-                    "Warriors",
-                    "Cavaliers"
+                    "Tiger Woods",
+                    "Arnold Palmer",
+                    "Jack Nicklaus",
+                    "Phil Mickelson",
+                    "Ben Hogan",
+                    "Jimmy Demaret"
                 ]
             },
-            "a": "Lakers"
+            "a": "Jack Nicklaus",
+            "f": "1965 and 1966 for his 2nd and 3rd times out of a total of 6"
         },
         "500": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which of the following cities is NOT home to an inaugural NHL team?",
-                "choices": [
-                    "Pittsburgh",
-                    "Chicago",
-                    "Detroit"
-                ]
+                "type": "text",
+                "text": "What is it called when a player scores 2 goals in a game of soccer?"
             },
-            "a": "Pittsburgh"
+            "a": "A brace"
         }
     }),
     "2": new Category("Science", "#329aea", {
@@ -81,249 +71,256 @@ window.questions = {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "If a swimmer is caught in an ocean rip tide, which is the safest direction to swim first?",
+                "text": "Which of these is NOT considered a noble gas?",
                 "choices": [
-                    "Against the current",
-                    "Toward the shore",
-                    "Parallel to the shore"
+                    "Boron",
+                    "Helium",
+                    "Neon",
+                    "Argon",
+                    "Krypton",
+                    "Xenon",
+                    "Radon"
                 ]
             },
-            "a": "Parallel to the shore"
-        },
-        "200": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Which cooking term describes cutting food into matchstick-like strips?",
-                "choices": [
-                    "Mince",
-                    "Dice",
-                    "Julienne"
-                ]
-            },
-            "a": "Julienne"
-        },
-        "300": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "As viewed from Earth, what is the second-brightest naturally occurring object in the night sky?",
-                "choices": [
-                    "Venus",
-                    "Polaris",
-                    "The Moon"
-                ]
-            },
-            "a": "Venus"
-        },
-        "400": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Who is IBM's game-show-winning computer named after?",
-                "choices": [
-                    "IBM's first CEO",
-                    "Sherlock Holmes sidekick",
-                    "Genetic researcher"
-                ]
-            },
-            "a": "IBM's first CEO"
-        },
-        "500": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Which of these phrases refers to debugging software?",
-                "choices": [
-                    "Rubber ducking",
-                    "Nest clearing",
-                    "Egg rolling"
-                ]
-            },
-            "a": "Rubber ducking"
-        }
-    }),
-    "3": new Category("Pop Culture", "#ef8166", {
-        "100": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Michael Jackson was known as the King of what?",
-                "choices": [
-                    "Rock",
-                    "Pop",
-                    "Dance"
-                ]
-            },
-            "a": "Pop"
+            "a": "Boron",
+            "f": "Radon is the only radioactive noble gas."
         },
         "200": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "According to an old saying, you should \"let sleeping dogs\" do what?",
+                "text": "What is the oldest iPhone model still in production today?"
             },
-            "a": "Lie"
+            "a": "iPhone 7 / iPhone 7 Plus"
+        },
+        "300": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "What planet in our solar system has the longest day?"
+            },
+            "a": "Venus",
+            "f": "243 Earth days"
+        },
+        "400": {
+            "timer": 90,
+            "q": {
+                "type": "choice",
+                "text": "Which three-letter abbreviation for a trigonometric ratio is a common English word?",
+                "choices": [
+                    "Hypotenuse / opposite",
+                    "Adjacent / hypotenuse",
+                    "Opposite / adjacent"
+                ]
+            },
+            "a": "Opposite / adjacent",
+            "f": "Tan"
+        },
+        "500": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "The top-level domain .tv originates from a nation located where?",
+                "choices": [
+                    "Africa",
+                    "Europe",
+                    "North America",
+                    "Asia",
+                    "Oceania"
+                ]
+            },
+            "a": "Oceania",
+            "f": "It comes from the country of Tuvalu in the Polynesian islands."
+        }
+    }),
+    "3": new Category("PopCulture", "#ef8166", {
+        "100": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "The exchange from center to quarterback is called the what?",
+                "choices": [
+                    "Snap",
+                    "Crackle",
+                    "Pop"
+                ]
+            },
+            "a": "Snap",
+            "f": "Snap Crackle Pop were also the mascots for Rice Krispies"
+        },
+        "200": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "Which of these villains sings her own musical number in her original Disney film?",
+                "choices": [
+                    "Maleficent",
+                    "Ursula",
+                    "Cruella de Vil"
+                ]
+            },
+            "a": "Ursula"
         },
         "300": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "The first film to defeat a \"Star Wars\" movie for the visual effects Oscar was from what series?",
+                "text": "Which of these sports figures has NOT hosted \"Saturday Night Live\"?",
                 "choices": [
-                    "The Matrix",
-                    "Lord of the Rings",
-                    "Jurassic Park"
+                    "John Madden",
+                    "Deion Sanders",
+                    "Serena Williams"
                 ]
             },
-            "a": "The Matrix"
+            "a": "Serena Williams"
         },
         "400": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "Which show's pilot episode cost so much that a network executive was fired over it?",
+                "choices": [
+                    "Lost",
+                    "Boardwalk Empire",
+                    "The Walking Dead",
+                    "House",
+                    "Game of Thrones"
+                ]
+            },
+            "a": "Lost",
+            "f": "The first episode cost 7 million dollars to produce, the highest of any pilot episode."
+        },
+        "500": {
             "timer": 60,
             "halfAllowed": true,
             "q": {
                 "type": "text",
                 "text": "Identify the song title and artist.",
-                "audioFile": "media/E-T.m4a"
+                "audioFile": "..."
             },
-            "a": "Thinking Out Loud - Ed Sheeran"
-        },
-        "500": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "What classic cartoon character's catchphrase refers to a dish of corn and lima beans?",
-                "choices": [
-                    "Sylvester the Cat",
-                    "Popeye",
-                    "Mighty Mouse"
-                ]
-            },
-            "a": "Sylvester the Cat"
+            "a": "Flight of the Bumblebee - Rimsky Korsakov"
         }
     }),
     "4": new Category("Geography", "#6eba83", {
         "100": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which of these countries' capital cities is farthest east?",
-                "choices": [
-                    "Cambodia",
-                    "Laos",
-                    "Thailand"
-                ]
+                "type": "text",
+                "text": "Which continent has the highest human population density?"
             },
-            "a": "Cambodia"
+            "a": "Asia"
         },
         "200": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "A popular type of massage gets its name from which of these countries?",
-                "choices": [
-                    "Sweden",
-                    "Switzerland",
-                    "Suriname"
-                ]
+                "type": "text",
+                "text": "What country is named for its location on the equator?"
             },
-            "a": "Sweden"
+            "a": "Ecuador"
         },
         "300": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "What country's longest mountain range is named for a color?",
-                "choices": [
-                    "Cuba",
-                    "Dominican Republic",
-                    "Jamaica"
-                ]
+                "type": "text",
+                "text": "Which country has the longest land border?"
             },
-            "a": "Jamaica"
+            "a": "China",
+            "f": "22,147 km, 40 km longer than Russia"
         },
         "400": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which country has hosted an Olympics but NOT a FIFA World Cup?",
-                "choices": [
-                    "Sweden",
-                    "South Korea",
-                    "Greece"
-                ]
+                "type": "text",
+                "text": "Which country has the world's largest active volcano?"
             },
-            "a": "Greece"
+            "a": "United States of America",
+            "f": "Mauna Loa (Hawaii)"
         },
         "500": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "According to World Atlas, the capital city with the lowest average temperature is located in which country?",
+                "text": "The biggest flower in the world is native to which country?",
                 "choices": [
-                    "Mongolia",
-                    "Greenland",
-                    "Russia"
+                    "England",
+                    "India",
+                    "Australia",
+                    "Argentina",
+                    "Indonesia"
                 ]
             },
-            "a": "Mongolia"
+            "a": "Indonesia",
+            "f": "The flower is called \"meat flower/stinking corpse\" lily. It can weigh up to 15 pounds"
         }
     }),
     "5": new Category("General", "#b95cf7", {
         "100": {
             "timer": 60,
             "q": {
-                "type": "text",
-                "text": "What does the French word \"bibliotheque\" mean in English?"
+                "type": "choice",
+                "text": "A full English breakfast traditionally includes which of these foods?",
+                "choices": [
+                    "Yogurt parfait",
+                    "Baked beans",
+                    "Acai bowl"
+                ]
             },
-            "a": "Library"
+            "a": "Baked beans"
         },
         "200": {
             "timer": 60,
             "q": {
-                "type": "text",
-                "text": "What is often added to chocolate to make it softer and milder-tasting?"
+                "type": "choice",
+                "text": "By definition, a person with \"tall poppy syndrome\" dislikes what?",
+                "choices": [
+                    "Heights",
+                    "Poppies",
+                    "Successful people",
+                    "Remembrance Day",
+                    "Tall people"
+                ]
             },
-            "a": "Milk"
+            "a": "Successful people"
         },
         "300": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which of these plurals is NOT correct?",
-                "choices": [
-                    "Notaries public",
-                    "Attorneys General",
-                    "Mother-in-laws"
-                ]
+                "type": "text",
+                "text": "What does HALO in HALO jump stand for?"
             },
-            "a": "Mother-in-laws"
+            "a": "High Altitude - Low Opening"
         },
         "400": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "In the game of Scrabble, which of these words would result in the highest score?",
+                "text": "Which of these companies changed its original name because of its morbid connotation?",
                 "choices": [
-                    "QUIXOTRY",
-                    "SYZYGY",
-                    "ZANJURO"
+                    "Amazon",
+                    "Google",
+                    "Facebook",
+                    "Veeva",
+                    "Shopify"
                 ]
             },
-            "a": "QUIXOTRY"
+            "a": "Amazon",
+            "f": "Amazon used to be called \"Cadabra\". This was changed after a lawyer misheard it as \"Cadaver\""
         },
         "500": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Which animal can emit blood from its eyes when threatened?",
+                "text": "Which of these beers is made by a fully US-owned company?",
                 "choices": [
-                    "Velvet worm",
-                    "Sea cucumber",
-                    "Horned lizard"
+                    "Budweiser",
+                    "Yuengling",
+                    "Coors",
+                    "Molson",
+                    "Guinness",
+                    "Stella Artois"
                 ]
             },
-            "a": "Horned lizard"
+            "a": "Yuengling"
         }
     })
 };
@@ -334,10 +331,6 @@ window.bonusQuestions = {
         { "title": "Always Be My Baby",    "artist": "Mariah Carey" },
         { "title": "Lose Yourself",        "artist": "Eminem" },
         { "title": "Party in the USA",     "artist": "Miley Cyrus" },
-        { "title": "It's Gonna Be Me",     "artist": "NSync" },
-        { "title": "Bohemian Rhapsody",    "artist": "Queen" },
-        { "title": "Just The Way You Are", "artist": "Bruno Mars" },
-        { "title": "I Want You Back",      "artist": "Jackson 5" },
-        { "title": "Sweet Child O' Mine",  "artist": "Guns N' Roses" }
+        { "title": "It's Gonna Be Me",     "artist": "NSync" }
     ]
 };

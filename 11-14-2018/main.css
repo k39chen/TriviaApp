@@ -316,7 +316,12 @@ input[type="text"]:active, input[type="text"]:focus {
     transform: rotate(270deg);
     transform-origin: left top;
     text-transform: uppercase;
+}
+#question > .title > b {
     opacity: 0.1;
+}
+#question > .title > em {
+    opacity: 0.3;
 }
 #question > .timer {
     overflow: hidden;
@@ -483,10 +488,11 @@ input[type="text"]:active, input[type="text"]:focus {
     overflow: hidden;
     width: 100%;
     margin-bottom: 12px;
-    font-size: 32px;
+    font-size: 42px;
     text-align: left;
 }
 #bonus > .wrapper > .answers > .answer-line > .track {
+    font-size: 42px;
 }
 #bonus > .wrapper > .answers > .answer-line > .artist {
 }
