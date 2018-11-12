@@ -11,6 +11,7 @@ $(document).ready(function() {
             top: ev.pageY - 12
         });
     });
+    // Ctrl + K to toggle the score
     $("body").on("keyup", function(ev) {
         if (ev.ctrlKey && ev.which === 75) {
             toggleScore();
@@ -157,6 +158,7 @@ $(document).ready(function() {
 
     showScreen("home");
     hideScore();
+    createBonus();
 
     function showScreen(screen) {
         if (screen === "board") {
@@ -344,6 +346,20 @@ $(document).ready(function() {
             });
         });
     };
+    function createBonus() {
+        var $bonus = $("#bonus");
+        var $audio = $bonus.find("> .wrapper > div > audio.bonus-audio");
+        var $answers = $bonus.find("> .wrapper > div.answers");
+
+        $audio.append('<source src="' + bonusQuestions.audioFile + '" type="audio/mp4" />');
+
+        _.each(bonusQuestions.tracks, function(track, index) {
+            var $track = $("<div class='answer-line' />").appendTo($answers);
+            var $index = $("<span class='track' />").append((index + 1) + ".").appendTo($track);
+            var $title = $("<span class='title' />").append(track.title + " -").appendTo($track);
+            var $artist = $("<span class='artist' />").append(track.artist).appendTo($track);
+        });
+    }
     function showQuestion(categoryId, questionId) {
         var $question = $("#question");
 

@@ -29,7 +29,7 @@ button {
     color: white;
     background: rgba(255,255,255,0.25);
     opacity: 1.0;
-    font-size: 32px;
+    font-size: 48px;
     font-family: "ProximaNova";
     border: none;
     border-radius: 3px;
@@ -42,7 +42,7 @@ input[type="text"] {
     width: 100%;
     height: 64px;
     padding: 12px 16px;
-    font-size: 24px;
+    font-size: 32px;
     border: solid 1px #d7d7d7;
     color: #595959;
     border-radius: 12px;
@@ -76,6 +76,7 @@ input[type="text"]:active, input[type="text"]:focus {
     font-family: "ProximaNovaBd";
     font-weight: 800;
     font-size: 96px;
+    margin-top: 24px;
     margin-bottom: 24px;
 }
 #home > .wrapper > .subtitle {
@@ -245,6 +246,7 @@ input[type="text"]:active, input[type="text"]:focus {
 #board > .questions {
     height: calc(100% - 160px);
     text-transform: uppercase;
+    font-size: 48px;
 }
 #board > .questions > .category {
     float: left;
@@ -273,7 +275,7 @@ input[type="text"]:active, input[type="text"]:focus {
 #board > .questions > .category > .question > .wrapper {
     transition: opacity 0.2s;
     cursor: pointer;
-    font-size: 64px;
+    font-size: 72px;
     opacity: 1.0;
 }
 #board > .questions > .category > .question > .wrapper.masked {
@@ -326,6 +328,7 @@ input[type="text"]:active, input[type="text"]:focus {
     float: left;
     line-height: 64px;
     margin-right: 12px;
+    font-size: 42px;
 }
 #question > .timer > button {
     float: left;
@@ -337,6 +340,7 @@ input[type="text"]:active, input[type="text"]:focus {
     padding: 0 15%;
     vertical-align: middle;
     text-align: center;
+    font-size: 42px;
 }
 #question > .wrapper > .title,
 #question > .wrapper > .subtitle {
@@ -345,11 +349,11 @@ input[type="text"]:active, input[type="text"]:focus {
     opacity: 0.7;
     font-family: "ProximaNovaBd";
     font-weight: 800;
-    font-size: 24px;
+    font-size: 32px;
 }
 #question > .wrapper > .subtitle {
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 42px;
 }
 
 #question > .wrapper > .text-container {
@@ -457,14 +461,16 @@ input[type="text"]:active, input[type="text"]:focus {
     display: table-cell;
     padding: 0 15%;
     vertical-align: middle;
+    font-size: 42px;
 }
 #bonus > .wrapper > .title {
+    margin-top: 24px;
     margin-bottom: 48px;
     text-transform: uppercase;
     opacity: 0.7;
     font-family: "ProximaNovaBd";
     font-weight: 800;
-    font-size: 24px;
+    font-size: 42px;
 }
 #bonus > .wrapper > .text {
     display: inline-block;
@@ -477,7 +483,7 @@ input[type="text"]:active, input[type="text"]:focus {
     overflow: hidden;
     width: 100%;
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 32px;
     text-align: left;
 }
 #bonus > .wrapper > .answers > .answer-line > .track {
@@ -504,6 +510,7 @@ input[type="text"]:active, input[type="text"]:focus {
 #bonus > .scores > .team {
     overflow: hidden;
     margin-bottom: 12px;
+    font-size: 42px;
 }
 #bonus > .scores > .team:last-child {
     margin-bottom: 0;
@@ -559,7 +566,7 @@ input[type="text"]:active, input[type="text"]:focus {
     line-height: 48px;
     font-family: "ProximaNovaBd";
     font-weight: 800;
-    font-size: 32px;
+    font-size: 48px;
     border-bottom: solid 1px #d7d7d7;
 }
 #scores > .wrapper > .scores > .team:nth-child(1) {
