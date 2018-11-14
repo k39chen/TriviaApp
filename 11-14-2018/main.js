@@ -381,8 +381,13 @@ $(document).ready(function() {
         var category = questions[categoryId];
         var question = category[questionId];
 
-        $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
-
+        if (_.isEqual(category.category, "Popculture")) {
+            $title.html("<b>Pop</b>" + "<em>" + questionId + "</em>");
+        } else if (_.isEqual(category.category, "Geography")) {
+            $title.html("<b>Geo</b>" + "<em>" + questionId + "</em>");
+        } else {
+            $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
+        }
         $scores.css({ display: "none" });
 
         $timer.css({ display: "block" });

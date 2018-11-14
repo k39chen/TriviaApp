@@ -133,7 +133,7 @@ window.questions = {
             "f": "It comes from the country of Tuvalu in the Polynesian islands."
         }
     }),
-    "3": new Category("PopCulture", "#ef8166", {
+    "3": new Category("Popculture", "#ef8166", {
         "100": {
             "timer": 60,
             "q": {
@@ -196,7 +196,7 @@ window.questions = {
             "q": {
                 "type": "text",
                 "text": "Identify the song title and artist.",
-                "audioFile": "..."
+                "audioFile": "media/FlightOfTheBumblebee.m4a"
             },
             "a": "Flight of the Bumblebee - Rimsky Korsakov"
         }
@@ -234,7 +234,7 @@ window.questions = {
                 "text": "Which country has the world's largest active volcano?"
             },
             "a": "United States of America",
-            "f": "Mauna Loa (Hawaii)"
+            "f": "Mauna Loa (Hawai'i)"
         },
         "500": {
             "timer": 60,
@@ -250,7 +250,7 @@ window.questions = {
                 ]
             },
             "a": "Indonesia",
-            "f": "The flower is called \"meat flower/stinking corpse\" lily. It can weigh up to 15 pounds"
+            "f": "The flower is called \"meat flower/stinking corpse lily\". It can weigh up to 15 pounds"
         }
     }),
     "5": new Category("General", "#b95cf7", {
@@ -325,12 +325,12 @@ window.questions = {
     })
 };
 window.bonusQuestions = {
-    "audioFile": "media/FinalGauntlet.m4a",
+    "audioFile": "media/Gauntlet.m4a",
     "tracks": [
-        { "title": "Mr. Brightside",       "artist": "Killers" },
-        { "title": "Always Be My Baby",    "artist": "Mariah Carey" },
-        { "title": "Lose Yourself",        "artist": "Eminem" },
-        { "title": "Party in the USA",     "artist": "Miley Cyrus" },
-        { "title": "It's Gonna Be Me",     "artist": "NSync" }
+        { "title": "This Love",            "artist": "Maroon 5" },
+        { "title": "Sweet Home Alabama",   "artist": "Lynyrd Skynyrd" },
+        { "title": "Alive",                "artist": "Sia" },
+        { "title": "No Tears Left to Cry", "artist": "Arianna Grande" },
+        { "title": "Under Pressure",       "artist": "Queen" }
     ]
 };
