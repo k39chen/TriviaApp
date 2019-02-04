@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Trivia</title>
+
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+
+    <script type="text/javascript" src="underscore.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <img id="cursor" src="images/cursor.png" />
+
+    <div id="home" class="screen">
+        <div class="bg">
+            <div class="panel" data-value="1"></div>
+            <div class="panel" data-value="2"></div>
+            <div class="panel" data-value="3"></div>
+            <div class="panel" data-value="4"></div>
+            <div class="panel" data-value="5"></div>
+        </div>
+        <div class="wrapper">
+            <div class="title">Veeva Trivia</div>
+            <div class="subtitle">
+                <em>Hosted By:</em><br />
+                Suchintan Singh,<br />
+                Alexander Anam,<br />
+                Hamza Yousaf,<br />
+                Kevin Chen
+            </div>
+            <button class="start-game-btn">Start Game</button>
+        </div>
+        <div class="teams-container">
+            <div class="teams-list"></div>
+
+            <span class="team-name-input-group">
+                <input class="team-name-value" type="text" placeholder="Enter team name" />
+                <button class="add-team-btn">+</button>
+            </span>
+        </div>
+    </div>
+
+    <div id="board" class="screen">
+        <div class="scores">
+            <button class="back-btn">&lt;</button>
+            <div class="score-list"></div>
+            <button class="finish-btn">&gt;</button>
+        </div>
+        <div class="questions"></div>
+    </div>
+
+    <div id="bonus" class="screen">
+        <button class="back-btn">&lt;</button>
+        <button class="finish-btn">&gt;</button>
+        <div class="wrapper">
+            <div class="title">Bonus Question</div>
+            <div class="text">Identify as many song names as possible. <br />Each correct song name is worth 100 points.</div>
+            <div>
+                <audio class="bonus-audio" controls preload="none"></audio>
+            </div>
+            <button class="show-answer-btn">Show Answer</button>
+
+            <div class="answers"></div>
+        </div>
+        <div class="scores"></div>
+    </div>
+
+    <div id="scores" class="screen">
+        <div class="bg">
+            <div class="panel" data-value="1"></div>
+            <div class="panel" data-value="2"></div>
+            <div class="panel" data-value="3"></div>
+            <div class="panel" data-value="4"></div>
+            <div class="panel" data-value="5"></div>
+        </div>
+        <button class="back-btn">&lt;</button>
+        <div class="wrapper">
+            <div class="title">Leaderboard</div>
+            <div class="scores"></div>
+        </div>
+    </div>
+
+    <!-- this will show the active question -->
+    <div id="question">
+        <button class="back-btn">&lt;</button>
+        <div class="title"></div>
+        <div class="timer">
+            <span class="time">60 seconds</span>
+            <button class="start-btn">Start</button>
+            <button class="stop-btn">Stop</button>
+        </div>
+        <div class="scores"></div>
+        <div class="wrapper">
+            <div class="subtitle subtitle-q">Question</div>
+            <div class="text-container">
+                <div class="text"></div>
+                <div class="choices"></div>
+            </div>
+
+            <button class="show-answer-btn">Show Answer</button>
+
+            <div class="subtitle subtitle-a">Answer</div>
+            <div class="answer"></div>
+
+            <div class="subtitle subtitle-f">Fun Fact</div>
+            <div class="fact"></div>
+
+            <button class="close-btn">Back to Questions</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
