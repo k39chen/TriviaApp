@@ -9,214 +9,69 @@ window.Category = function(category, color, questions) {
     });
 };
 window.questions = {
-    "1": new Category("Sports", "#f89728", {
+    "1": new Category("Space", "#329aea", {
         "100": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which of these sports has the fewest number of players on the field at one time?",
-                "choices": [
-                    "Baseball",
-                    "American football",
-                    "Soccer"
-                ]
+                "type": "text",
+                "text": "What is the name of the first manned mission to land on the moon?"
             },
-            "a": "Baseball",
-            "f": "9 people on the field"
+            "a": "Apollo 11"
         },
         "200": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "Who set the NHL record for goals by a rookie born in the United States?"
+                "text": "In our solar system which two planets are known as ice giants?"
             },
-            "a": "Auston Matthews"
+            "a": "Uranus and Neptune"
         },
         "300": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "In what sport does a jammer score a point for each opponent they skate past?"
+                "text": "What is Earth's largest living structure that can be seen from outer space?"
             },
-            "a": "Roller derby"
+            "a": "Great Barrier Reef"
         },
         "400": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Who was the first golfer to win the Masters Tournament two years in a row?",
+                "text": "What is the closest star to our sun?",
                 "choices": [
-                    "Tiger Woods",
-                    "Arnold Palmer",
-                    "Jack Nicklaus",
-                    "Phil Mickelson",
-                    "Ben Hogan",
-                    "Jimmy Demaret"
+                    "Alpha Centauri A",
+                    "Alpha Centauri B",
+                    "Proxima Centauri"
                 ]
             },
-            "a": "Jack Nicklaus",
-            "f": "1965 and 1966 for his 2nd and 3rd times out of a total of 6"
+            "a": "Proxima Centauri"
         },
         "500": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "What is it called when a player scores 2 goals in a game of soccer?"
+                "text": "In our solar system, which planet has the shortest day?"
             },
-            "a": "A brace"
+            "a": "Jupiter"
         }
     }),
-    "2": new Category("Science", "#329aea", {
+    "2": new Category("Music", "#f89728", {
         "100": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "Which of these is NOT considered a noble gas?",
-                "choices": [
-                    "Boron",
-                    "Helium",
-                    "Neon",
-                    "Argon",
-                    "Krypton",
-                    "Xenon",
-                    "Radon"
-                ]
+                "type": "text",
+                "text": "\"If I Had a Million Dollars\" is a song by which Canadian musical group?"
             },
-            "a": "Boron",
-            "f": "Radon is the only radioactive noble gas."
+            "a": "Barenaked Ladies"
         },
         "200": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "What is the oldest iPhone model still in production today?"
+                "text": "What does R&amp;B stand for?"
             },
-            "a": "iPhone 7 / iPhone 7 Plus"
-        },
-        "300": {
-            "timer": 60,
-            "q": {
-                "type": "text",
-                "text": "What planet in our solar system has the longest day?"
-            },
-            "a": "Venus",
-            "f": "243 Earth days"
-        },
-        "400": {
-            "timer": 90,
-            "q": {
-                "type": "choice",
-                "text": "Which three-letter abbreviation for a trigonometric ratio is a common English word?",
-                "choices": [
-                    "Hypotenuse / opposite",
-                    "Adjacent / hypotenuse",
-                    "Opposite / adjacent"
-                ]
-            },
-            "a": "Opposite / adjacent",
-            "f": "Tan"
-        },
-        "500": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "The top-level domain .tv originates from a nation located where?",
-                "choices": [
-                    "Africa",
-                    "Europe",
-                    "North America",
-                    "Asia",
-                    "Oceania"
-                ]
-            },
-            "a": "Oceania",
-            "f": "It comes from the country of Tuvalu in the Polynesian islands."
-        }
-    }),
-    "3": new Category("Popculture", "#ef8166", {
-        "100": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "The exchange from center to quarterback is called the what?",
-                "choices": [
-                    "Snap",
-                    "Crackle",
-                    "Pop"
-                ]
-            },
-            "a": "Snap",
-            "f": "Snap Crackle Pop were also the mascots for Rice Krispies"
-        },
-        "200": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Which of these villains sings her own musical number in her original Disney film?",
-                "choices": [
-                    "Maleficent",
-                    "Ursula",
-                    "Cruella de Vil"
-                ]
-            },
-            "a": "Ursula"
-        },
-        "300": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Which of these sports figures has NOT hosted \"Saturday Night Live\"?",
-                "choices": [
-                    "John Madden",
-                    "Deion Sanders",
-                    "Serena Williams"
-                ]
-            },
-            "a": "Serena Williams"
-        },
-        "400": {
-            "timer": 60,
-            "q": {
-                "type": "choice",
-                "text": "Which show's pilot episode cost so much that a network executive was fired over it?",
-                "choices": [
-                    "Lost",
-                    "Boardwalk Empire",
-                    "The Walking Dead",
-                    "House",
-                    "Game of Thrones"
-                ]
-            },
-            "a": "Lost",
-            "f": "The first episode cost 7 million dollars to produce, the highest of any pilot episode."
-        },
-        "500": {
-            "timer": 60,
-            "halfAllowed": true,
-            "q": {
-                "type": "text",
-                "text": "Identify the song title and artist.",
-                "audioFile": "media/FlightOfTheBumblebee.m4a"
-            },
-            "a": "Flight of the Bumblebee - Rimsky Korsakov"
-        }
-    }),
-    "4": new Category("Geography", "#6eba83", {
-        "100": {
-            "timer": 60,
-            "q": {
-                "type": "text",
-                "text": "Which continent has the highest human population density?"
-            },
-            "a": "Asia"
-        },
-        "200": {
-            "timer": 60,
-            "q": {
-                "type": "text",
-                "text": "What country is named for its location on the equator?"
-            },
-            "a": "Ecuador"
+            "a": "Rhythm and Blues"
         },
         "300": {
             "timer": 60,
@@ -253,74 +108,170 @@ window.questions = {
             "f": "The flower is called \"meat flower/stinking corpse lily\". It can weigh up to 15 pounds"
         }
     }),
-    "5": new Category("General", "#b95cf7", {
+    "3": new Category("Harry Potter", "#6eba83", {
         "100": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "A full English breakfast traditionally includes which of these foods?",
-                "choices": [
-                    "Yogurt parfait",
-                    "Baked beans",
-                    "Acai bowl"
-                ]
+                "type": "text",
+                "text": "How many points is the \"Golden Snitch\" worth?"
             },
-            "a": "Baked beans"
+            "a": "150 points"
         },
         "200": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "By definition, a person with \"tall poppy syndrome\" dislikes what?",
-                "choices": [
-                    "Heights",
-                    "Poppies",
-                    "Successful people",
-                    "Remembrance Day",
-                    "Tall people"
-                ]
+                "type": "text",
+                "text": "Who played Headmaster Dumbledore in the first two Harry Potter movies?"
             },
-            "a": "Successful people"
+            "a": "Richard Harris"
         },
         "300": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "What does HALO in HALO jump stand for?"
+                "text": "In the novels, what colour are Harry Potter's eyes?"
             },
-            "a": "High Altitude - Low Opening"
+            "a": "Green",
+            "f": "Daniel Radcliffe's eyes are blue in the movies"
+        },
+        "400": {
+            "timer": 90,
+            "q": {
+                "type": "choice",
+                "text": "In Harry Potter and the Goblet of Fire, which sweet did Dudley eat when the Weasleys visited Privet Drive?",
+                "choices": [
+                    "Fainting Fancy",
+                    "Nosebleed Nougat",
+                    "Ton-Tongue Toffee",
+                    "Puking Pastille"
+                ]
+            },
+            "a": "Ton-Tongue Toffee"
+        },
+        "500": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "What is the name of the spell used to get rid of a Boggart?"
+            },
+            "a": "Riddikulus"
+        }
+    }),
+    "4": new Category("Games", "#b95cf7", {
+        "100": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "Which of these is not a legitimate \"Call of Duty\" title?",
+                "choices": [
+                    "Call of Duty: Modern Warfare",
+                    "Call of Duty: Advanced Warfare",
+                    "Call of Duty: Ultimate Warfare",
+                    "Call of Duty: Infinite Warfare",
+                ]
+            },
+            "a": "Call of Duty: Ultimate Warfare"
+        },
+        "200": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "What is the hand-size limit in the popular collectible card game \"Hearthstone\"?",
+                "choices": [
+                    "5",
+                    "7",
+                    "10"
+                ]
+            },
+            "a": "10"
+        },
+        "300": {
+            "timer": 60,
+            "q": {
+                "type": "choice",
+                "text": "What is the woodcutting level required to cut \"Yew Trees\" in \"Runescape\"?",
+                "choices": [
+                    "45 Woodcutting",
+                    "60 Woodcutting",
+                    "61 Woodcutting",
+                    "75 Woodcutting"
+                ]
+            },
+            "a": "60 Woodcutting"
         },
         "400": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Which of these companies changed its original name because of its morbid connotation?",
+                "text": "In \"League of Legends\", who created \"Blitzcrank\"?",
                 "choices": [
-                    "Amazon",
-                    "Google",
-                    "Facebook",
-                    "Veeva",
-                    "Shopify"
+                    "Jayce",
+                    "Heimerdinger,",
+                    "Ezreal's Uncle, Lyte",
+                    "Viktor"
                 ]
             },
-            "a": "Amazon",
-            "f": "Amazon used to be called \"Cadabra\". This was changed after a lawyer misheard it as \"Cadaver\""
+            "a": "Viktor"
+        },
+        "500": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "What was the first video game to feature an Easter Egg?"
+            },
+            "a": "Adventure (Atari 2600)",
+            "f": "This was recently featured in \"Ready Player One\""
+        }
+    }),
+    "5": new Category("Canada", "#ef8166", {
+        "100": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "What is the capital city of the Yukon Territories?"
+            },
+            "a": "Yellowknife"
+        },
+        "200": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "In what year did Canada become a country?"
+            },
+            "a": "1867"
+        },
+        "300": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "Which street in Toronto is also the longest street in the world?"
+            },
+            "a": "Yonge Street",
+            "f": "1,896 km (1,178 mi) km long"
+        },
+        "400": {
+            "timer": 60,
+            "q": {
+                "type": "text",
+                "text": "What shape are license plates in the Northwest territories?"
+            },
+            "a": "Polar Bears"
         },
         "500": {
             "timer": 60,
             "q": {
                 "type": "choice",
-                "text": "Which of these beers is made by a fully US-owned company?",
+                "text": "What was Canada's lowest recorded temperature?",
                 "choices": [
-                    "Budweiser",
-                    "Yuengling",
-                    "Coors",
-                    "Molson",
-                    "Guinness",
-                    "Stella Artois"
+                    "-42 C",
+                    "-48 C",
+                    "-55 C",
+                    "-63 C",
+                    "-73 C"
                 ]
             },
-            "a": "Yuengling"
+            "a": "-63 C",
+            "f": "Canada's lowest recorded temperature was -81.4 F (-63 C) in 1947."
         }
     })
 };
