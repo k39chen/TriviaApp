@@ -20,6 +20,7 @@ window.questions = {
         },
         "200": {
             "timer": 60,
+            "halfAllowed": true,
             "q": {
                 "type": "text",
                 "text": "In our solar system which two planets are known as ice giants?"
@@ -77,35 +78,26 @@ window.questions = {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "Which country has the longest land border?"
+                "text": "What is the name of Taylor Swift's first album?"
             },
-            "a": "China",
-            "f": "22,147 km, 40 km longer than Russia"
+            "a": "Taylor Swift"
         },
         "400": {
             "timer": 60,
             "q": {
                 "type": "text",
-                "text": "Which country has the world's largest active volcano?"
+                "text": "What is the full name of the man who composed 'Moonlight Sonata'?"
             },
-            "a": "United States of America",
-            "f": "Mauna Loa (Hawai'i)"
+            "a": "Ludwig Van Beethoven",
+            "f": "Beethoven began losing his hearing in his mid twenties but continued to compose music even after becoming fully deaf."
         },
         "500": {
             "timer": 60,
             "q": {
-                "type": "choice",
-                "text": "The biggest flower in the world is native to which country?",
-                "choices": [
-                    "England",
-                    "India",
-                    "Australia",
-                    "Argentina",
-                    "Indonesia"
-                ]
+                "type": "text",
+                "text": "Which Spice Girl made her sudden departure from the group in 1998?"
             },
-            "a": "Indonesia",
-            "f": "The flower is called \"meat flower/stinking corpse lily\". It can weigh up to 15 pounds"
+            "a": "Ginger Spice (Geri Halliwell)"
         }
     }),
     "3": new Category("Harry Potter", "#6eba83", {
@@ -278,10 +270,10 @@ window.questions = {
 window.bonusQuestions = {
     "audioFile": "media/Gauntlet.m4a",
     "tracks": [
-        { "title": "This Love",            "artist": "Maroon 5" },
-        { "title": "Sweet Home Alabama",   "artist": "Lynyrd Skynyrd" },
-        { "title": "Alive",                "artist": "Sia" },
-        { "title": "No Tears Left to Cry", "artist": "Arianna Grande" },
-        { "title": "Under Pressure",       "artist": "Queen" }
+        { "title": "Girls Like You",   "artist": "Maroon 5 ft. Cardi B" },
+        { "title": "‘Till I Collapse", "artist": "Eminem" },
+        { "title": "In The End",       "artist": "Linkin Park" },
+        { "title": "Sorry Not Sorry",  "artist": "Demi Lovato" },
+        { "title": "Piano Man",        "artist": "Billy Joel" }
     ]
 };
