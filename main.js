@@ -344,11 +344,11 @@ $(document).ready(function() {
 
             if (!_.isEmpty(mediaFile)) {
                 if (mediaFile.indexOf(".m4a") >= 0) {
-                    result[category][scoreValue].q.audioFile = "../media/" + mediaFile;
+                    result[category][scoreValue].q.audioFile = "media/" + mediaFile;
                 } else if (mediaFile.indexOf(".png") >= 0 || mediaFile.indexOf(".jpg") >= 0 || mediaFile.indexOf(".gif") >= 0) {
-                    result[category][scoreValue].q.imageFile = "../media/" + mediaFile;
+                    result[category][scoreValue].q.imageFile = "media/" + mediaFile;
                 } else if (mediaFile.indexOf(".webm") >= 0 || mediaFile.indexOf(".mp4") >= 0) {
-                    result[category][scoreValue].q.videoFile = "../media/" + mediaFile;
+                    result[category][scoreValue].q.videoFile = "media/" + mediaFile;
                 }
             }
             result[category][scoreValue].q.type = questionType;
@@ -410,7 +410,7 @@ $(document).ready(function() {
             var firstColCell = rowData[0];
 
             if (_.isEqual(firstColCell, "AUDIO FILE")) {
-                bonusQuestion.audioFile = "../media/" + rowData[1];
+                bonusQuestion.audioFile = "media/" + rowData[1];
             }
             if (!_.contains(["GAUNTLET", "TRACK TITLE", "AUDIO FILE"], firstColCell)) {
                 bonusQuestion.tracks.push({
