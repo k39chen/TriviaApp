@@ -301,11 +301,9 @@ $(document).ready(function() {
             "QUESTION TEXT": 3,
             "ANSWER": 4,
             "MULTIPLE CHOICES": 5,
-            "AUDIO FILE": 6,
-            "IMAGE FILE": 7,
-            "VIDEO FILE": 8,
-            "HALF ALLOWED": 9,
-            "TIME LIMIT": 10
+            "MEDIA FILE": 6,
+            "HALF ALLOWED": 7,
+            "TIME LIMIT": 8
         };
         var result = {};
         var finalResult = {};
@@ -322,9 +320,7 @@ $(document).ready(function() {
             var questionText = rowData[colIndexMapping["QUESTION TEXT"]];
             var answer = rowData[colIndexMapping["ANSWER"]];
             var multipleChoices = rowData[colIndexMapping["MULTIPLE CHOICES"]];
-            var audioFile = rowData[colIndexMapping["AUDIO FILE"]];
-            var imageFile = rowData[colIndexMapping["IMAGE FILE"]];
-            var videoFile = rowData[colIndexMapping["VIDEO FILE"]];
+            var mediaFile = rowData[colIndexMapping["MEDIA FILE"]];
             var halfAllowed = rowData[colIndexMapping["HALF ALLOWED"]];
             var timeLimit = rowData[colIndexMapping["TIME LIMIT"]];
 
@@ -346,10 +342,15 @@ $(document).ready(function() {
             }
             result[category][scoreValue].a = answer;
 
-            if (!_.isEmpty(audioFile)) result[category][scoreValue].audioFile = audioFile;
-            if (!_.isEmpty(imageFile)) result[category][scoreValue].imageFile = imageFile;
-            if (!_.isEmpty(videoFile)) result[category][scoreValue].videoFile = videoFile;
-
+            if (!_.isEmpty(mediaFile)) {
+                if (mediaFile.indexOf(".m4a") >= 0) {
+                    result[category][scoreValue].q.audioFile = "../media/" + mediaFile;
+                } else if (mediaFile.indexOf(".png") >= 0 || mediaFile.indexOf(".jpg") >= 0 || mediaFile.indexOf(".gif") >= 0) {
+                    result[category][scoreValue].q.imageFile = "../media/" + mediaFile;
+                } else if (mediaFile.indexOf(".webm") >= 0 || mediaFile.indexOf(".mp4") >= 0) {
+                    result[category][scoreValue].q.videoFile = "../media/" + mediaFile;
+                }
+            }
             result[category][scoreValue].q.type = questionType;
             result[category][scoreValue].q.text = questionText;
 
@@ -389,7 +390,9 @@ $(document).ready(function() {
 
             if (_.isEqual(firstColCell, "GAUNTLET")) {
                 rowIndexStart = rowIndex;
-                rowIndexEnd = tsvData.length - 1;
+            }
+            if (_.isEqual(firstColCell, "AUDIO FILE")) {
+                rowIndexEnd = rowIndex;
                 break;
             }
         }
