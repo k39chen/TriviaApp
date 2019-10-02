@@ -1,0 +1,68 @@
+DATE	2019-10-02							
+CONTRIBUTORS	Suchintan Singh;Alexander Anam;Kevin Chen							
+								
+QUESTIONS								
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Mammals	100	text	What is the largest mammal (by mass)?	Blue Whale				60
+Mammals	200	text	What is the fastest mammal on the planet?	Cheetah				60
+Mammals	300	text	How many years does Canada have its giant Pandas on loan from China?	10 years				60
+Mammals	400	text	What does a Koala's diet primarily consist of?	Eucalyptus leaves				60
+Mammals	500	text	Name one mammal that lays eggs.	Platypus, Echidna, or any Monotreme				60
+Sports	100	text	Which year did the first Canadian team win an NBA championship?	2019				60
+Sports	200	text	What is Japan's most popular sport?	Baseball				60
+Sports	300	text	How many Stanley Cups have the Maple Leafs won since 1915?	13				60
+Sports	400	text	Which country won the Cricket World Cup in 2019?	England				60
+Sports	500	choice	What is the longest drive (in yards) in professional golf?	515	375;415;465;515;565			60
+Capitals	100	text	What is the capital of Manitoba?	Winnipeg				60
+Capitals	200	text	What is the capital of Taiwan?	Taipei				60
+Capitals	300	text	What is the capital of Ukraine?	Kyiv or Kiev				60
+Capitals	400	text	What is the capital of Guyana?	Georgetown				60
+Capitals	500	text	What are two of the three capitals of South Africa?	Cape Town, Bloemfontein, Pretorei			Yes	60
+Animation	100	text	How many Toy Story movies are there?	4				60
+Animation	200	text	How many Pokemon were in the first generation of Pokemon?	151				60
+Animation	300	text	Which year was the first ever Disney movie released? 	Snow white and the seven dwarves was released in 1937				60
+Animation	400	text	How many Marvel superheroes are named on the fourth floor of Veeva?	7 out of 9 total rooms				60
+Animation	500	text	Which year was Marvel sold to Disney?	2009				60
+Music	100	text	Name the song title and artist.	Ariana Grande - 7 rings		Ariana Grande - 7 rings.m4a	Yes	60
+Music	200	text	Who is the highest grossing female musician of all time?	Taylor Swift				60
+Music	300	text	What is the best-selling album of all-time?	Thriller - Michael Jackson				60
+Music	400	text	Name the song title and artist.	Spice Girls - Wannabe		Spice Girls - Wannabe.m4a	Yes	60
+Music	500	text	What are the nicknames of all the Spice Girls?	Mel B ("Scary Spice"), Mel C ("Sporty Spice"), Emma Bunton ("Baby Spice"), Geri Halliwell ("Ginger Spice"), and Victoria Beckham ("Posh Spice")				60
+								
+GAUNTLET								
+TRACK TITLE	TRACK ARTIST							
+Turkish March	Mozart							
+Come And Get Your Love	Redbone							
+Don't Stop Me Now	Queen							
+Remember the name	Fort Minor							
+Senorita	Shawn Mendes, Camila Cabello							
+								
+AUDIO FILE	Gauntlet (2019-10-02).mp3							
+								
+Anything below this area will not be processed by the TriviaApp								
+Orange background indicates VTF keywords								
+								
+FEATURE REQUEST	SUPPORT IMAGES							
+FEATURE REQUEST	Visual timer bar							
+FEATURE REQUEST	Display currently loaded file name							
+FEATURE REQUEST	Ability to read game file from URL							
+FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
+FEATURE REQUEST	Configurable rules displayed on splash screen							
+FEATURE REQUEST	On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions							
+FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
+FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
+FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
+FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
+FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
+FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
+FEATURE REQUEST	When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)							
+								
+QUESTION IDEAS	Themes: Game of thrones, sci-fi							
+QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
+QUESTION IDEAS	Image/Video based questions							
+								
+CRITICISMS	Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?							
+CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
+CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
+								
+TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						

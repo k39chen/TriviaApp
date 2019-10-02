@@ -196,6 +196,7 @@ input[type="text"]:active, input[type="text"]:focus {
     overflow: hidden;
     position: relative;
     height: 160px;
+    border-bottom: solid 1px #d7d7d7;
 }
 #board > .scores > button {
     position: absolute;
@@ -220,17 +221,22 @@ input[type="text"]:active, input[type="text"]:focus {
 }
 #board > .scores > .score-list {
     overflow: hidden;
+    overflow-x: auto;
     position: absolute;
     top: 0;
     left: 120px;
     right: 120px;
     height: 160px;
+    white-space: nowrap;
+    border-left: solid 1px #d7d7d7;
+    border-right: solid 1px #d7d7d7;
+    text-align: center;
     box-sizing: border-box;
 }
 #board > .scores > .score-list > .score {
-    display: table;
-    float: left;
+    display: inline-block;
     height: 100%;
+    padding: 1em;
     text-align: center;
     color: #595959;
     box-sizing: border-box;

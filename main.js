@@ -529,7 +529,7 @@ $(document).ready(function() {
         for (var teamName in Teams) {
             var Team = Teams[teamName];
             var $score = $("<div class='score' value='" + teamName + "' />");
-            $score.css({ width: "calc(100% / " + numCols + ")" });
+            // $score.css({ width: "calc(100% / " + numCols + ")" });
 
             $score.append("<div class='wrapper'><div class='name'>" + teamName +  "</div><div class='value'>0</div></div>");
             $questionScores.append("<button class='team' value='" + teamName + "'>" + teamName + "</button>");
