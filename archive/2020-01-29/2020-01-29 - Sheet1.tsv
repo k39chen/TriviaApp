@@ -1,0 +1,69 @@
+DATE	2020-01-29							
+CONTRIBUTORS	Dharssan Pushparajah;Alexander Anam;Hamza Yousaf;Kevin Chen							
+								
+QUESTIONS								
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Disney	100	text	Identify the following movie.	Up!		Up_clip.mp4		30
+Disney	200	text	What are the names of the two princesses in 'Frozen'?	Elsa and Anna				45
+Disney	300	text	Who is the only official 'Disney' princess that is not actually royalty?	Mulan				45
+Disney	400	text	What was the first toy to be advertised on American television?	Mr. Potato Head				60
+Disney	500	text	Who is the only official 'Disney' princess to have a tattoo?	Pocahontas				60
+Sports	100	text	How many NBA teams currently play for Canada?	1				30
+Sports	200	text	Which tennis 'Grand Slam' is played on crushed red brick and white limestone?	French Open				45
+Sports	300	choice	Which European football team has won the most 'English Premier League' titles?	Manchester United	Liverpool;Arsenal;Juventus;Manchester United;Chelsea			45
+Sports	400	text	What was the last Canadian NHL team to make it to the 'Stanley Cup Finals'?	Vancouver Canucks				60
+Sports	500	text	Who is the highest paid athlete of the decade (2010-2019)?	Floyd Mayweather Jr.				60
+Flags	100	text	How many stars are on the American flag?	50				30
+Flags	200	text	What are the colors of France's flag?	Red, White, Blue				45
+Flags	300	text	Identify the country based on the following national flag.	Thailand		flag-world.gif		45
+Flags	400	text	How many stars are in the Australian flag?	6				60
+Flags	500	text	Which country has the only national flag in the world that is neither rectangular nor square shaped?	Nepal		Flag2-500x291.jpg		60
+Greek Mythology	100	text	Name the king of Olympus.	Zeus				30
+Greek Mythology	200	text	Who is the god of war?	Ares				45
+Greek Mythology	300	text	Which titan is forced to carry the heavens upon his shoulders?	Atlas				45
+Greek Mythology	400	text	Who is the goddess of the hunt, wilderness, animals, chastity, and childbirth?	Artemis				60
+Greek Mythology	500	text	Which mythological creature has the ability to regrow two heads when one is cut off?	Hydra				60
+TV	100	text	Identify the TV show based on the following theme song.	Friends		friends_intro.m4a		30
+TV	200	text	Name the following character from the hit TV series 'Game of Thrones'?	Jon Snow		kit-harington.jpg		45
+TV	300	text	Identify the TV show based on the following theme song.	Brooklyn Nine-Nine		b99_intro.m4a		45
+TV	400	text	In 'The Office', what is Dwight Schrute's favorite TV show?	Battlestar Galactica				60
+TV	500	text	In 'The Simpsons', what is the name of the street that the Simpsons live on?	Evergreen Terrace				60
+								
+GAUNTLET								
+TRACK TITLE	TRACK ARTIST							
+Beat it	Michael Jackson							
+Livin' On A Prayer	Bon Jovi							
+1000 Miles	Vanessa Carlton							
+Bad Guy	Billie Eilish							
+God's Plan	Drake							
+								
+AUDIO FILE	Gauntlet (2020-01-29).mp3							
+								
+Anything below this area will not be processed by the TriviaApp								
+Orange background indicates VTF keywords								
+								
+FEATURE REQUEST	SUPPORT IMAGES							
+FEATURE REQUEST	Visual timer bar							
+FEATURE REQUEST	Display currently loaded file name							
+FEATURE REQUEST	Ability to read game file from URL							
+FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
+FEATURE REQUEST	Configurable rules displayed on splash screen							
+FEATURE REQUEST	"On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions"							
+FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
+FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
+FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
+FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
+FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
+FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
+FEATURE REQUEST	"When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)"							
+								
+QUESTION IDEAS	"Themes: Game of thrones, sci-fi"							
+QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
+QUESTION IDEAS	Image/Video based questions							
+								
+CRITICISMS	"Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?"							
+CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
+CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
+CRITICISMS	"Some questions were too difficult for their point value. Could have a +/- for answers like ""be within 3 years of the answer"""							
+								
+TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						

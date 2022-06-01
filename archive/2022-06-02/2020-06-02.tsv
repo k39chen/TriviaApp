@@ -1,0 +1,71 @@
+DATE	2022-06-02							
+CONTRIBUTORS	Dharssan Pushparajah;Stella Namuyige;Kevin Chen;Shruthi Srinivasan							
+								
+QUESTIONS								
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Geography	100	text	Which continent has the Eiffel Tower?	Europe				30
+Geography	200	text	What is the piece of land called when it has water bordering it from three sides?	Peninsula				45
+Geography	300	choice	What country's flag is this?	Uruguay	Uruguay;Argentina;Paraguay;Greece	uruguay_flag.png		45
+Geography	400	text	Name three countries that start with 'F'.	Falkland Islands; Faroe Islands; Fiji; Finland; France; French Guiana; French Polynesia; French Southern And Antarctic Lands				60
+Geography	500	choice	What is the name of the newest ocean?	Southern Ocean	Grey Ocean;Indian Ocean;Southern Ocean;Australian Ocean			60
+Surprise Me	100	text	What is the significance of the following sequence of numbers: 2 3 5 7 11 13 17	The starting sequence of prime numbers				30
+Surprise Me	200	text	What are the three levels of government in Canada?	Municipal; Provincial; Federal				45
+Surprise Me	300	choice	How many teeth does a normal human have?	32	24;28;32;36			45
+Surprise Me	400	text	Which famous art piece was recently attacked with cake by a man in a wheelchair?	Mona Lisa				60
+Surprise Me	500	text	What was the address of the original Veeva Toronto office?	372 Bay St				60
+Entertainment	100	choice	What imaginary African nation is ruled by the comic book hero Black Panther?	Wakanda	Canada;Wakanda;Rwanda;Magic Kingdom			30
+Entertainment	200	choice	According to 'Forbes' who is now Hollywood's highest-paid actor?	Dwayne Johnson	Tom Cruise;Dwayne Johnson;Will Smith;Ryan Reynolds			45
+Entertainment	300	choice	How many total seasons of 'Friends' and 'The Office (US)' are there?	19	18;19;20;21			45
+Entertainment	400	text	What is the top streaming show of all-time on Netflix?	Squid Game				60
+Entertainment	500	text	Which active or inactive NBA player owns a stake in the Pittsburgh Penguins; Boston Red Sox; and Liverpool FC?	Lebron James				60
+Music	100	text	What is Jay-Z's real name?	Shawn Carter				30
+Music	200	choice	Who was the first member to leave One Direction?	Zayn	Zayn;Harry;Nial;Ron			30
+Music	300	choice	Who was the composer for the New World Symphony?	Antonin Dvorak	Ludwig Van Beethoven;Wolfgang Amadeus Mozart;Antonin Dvorak;Frederic Chopin			45
+Music	400	text	Identify the song title and artist.	Creep - Radiohead		Radiohead-Creep.m4a	Yes	30
+Music	500	choice	What was the original name of Destiny's Child?	Girl's Tyme	Bang Girls;Gurls;Original Gurls;Girl's Tyme			45
+Mercury	100	text	What planet from the Sun is Mercury?	First				30
+Mercury	200	choice	The Roman god Mercury is not a god of which of the following?	Artists	Shopkeepers;Tricksters;Thieves;Artists			45
+Mercury	300	text	Mercury is the only metal element that is liquid at standard temperature and pressure. What is its melting point?	-39 degrees celsius				45
+Mercury	400	choice	What league has a team with the name 'Mercury'?	WNBA	WNBA;NHL;NFL;MLS			60
+Mercury	500	choice	How many Mercury-sized planets can fit in the Sun?	21.2 million	12.3 million;15.4 million;21.2 million; 35.1 million			60
+								
+GAUNTLET								
+TRACK TITLE	TRACK ARTIST							
+Mr. Brightside	The Killers							
+Ode to Joy	Ludwig Van Beethoven							
+22	Taylor Swift							
+Crazy in Love	Beyonce ft. Jay -Z							
+Call Me Maybe	Carly Rae Jepsen							
+Driver's License	Olivia Rodrigo							
+In Da Club	50 Cent							
+								
+AUDIO FILE	Gauntlet (2022-06-02).m4a							
+								
+Anything below this area will not be processed by the TriviaApp								
+Orange background indicates VTF keywords								
+								
+FEATURE REQUEST	SUPPORT IMAGES							
+FEATURE REQUEST	Visual timer bar							
+FEATURE REQUEST	Display currently loaded file name							
+FEATURE REQUEST	Ability to read game file from URL							
+FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
+FEATURE REQUEST	Configurable rules displayed on splash screen							
+FEATURE REQUEST	"On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions"							
+FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
+FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
+FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
+FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
+FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
+FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
+FEATURE REQUEST	"When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)"							
+								
+QUESTION IDEAS	"Themes: Game of thrones, sci-fi"							
+QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
+QUESTION IDEAS	Image/Video based questions							
+								
+CRITICISMS	"Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?"							
+CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
+CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
+CRITICISMS	"Some questions were too difficult for their point value. Could have a +/- for answers like ""be within 3 years of the answer"""							
+								
+TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						

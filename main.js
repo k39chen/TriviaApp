@@ -689,10 +689,17 @@ $(document).ready(function() {
                 $choices.append($choice);
             }
         }
+
+        $question.find("audio").remove();
+        $question.find(".video-container").remove();
+        $question.find(".image-container").remove();
+
         if (question.q.audioFile) {
             $text.after("<audio controls preload='none'><source src='" + question.q.audioFile + "' type='audio/mp4' height='32' /></audio>");
-        } else {
-            $question.find("audio").remove();
+        } else if (question.q.videoFile) {
+            $text.after("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 320px; margin-top: 12px;'><source src='" + question.q.videoFile + "' type='video/mp4' /></video></div>");
+        } else if (question.q.imageFile) {
+            $text.after("<div class='image-container' style='text-align: center;'><img src='" + question.q.imageFile + "' style='height: 320px; margin-top: 12px;' /></div>");
         }
         $answer.html(question.a);
 
@@ -796,8 +803,9 @@ $(document).ready(function() {
         $question.css({ left: 0 }).animate({ left: "100%" }, 500, function() {
             $(this).css({ display: "none" });
 
-            // remove any lingering audio
+            // remove any lingering audio/video
             $question.find("audio").remove();
+            $question.find("video").remove();
 
             activeQuestion = null;
         });
