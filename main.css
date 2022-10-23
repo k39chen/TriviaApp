@@ -180,11 +180,6 @@ input[type="text"]:active, input[type="text"]:focus {
     width: 20%;
     height: 100%;
 }
-#home > .bg > .panel[data-value="1"] { background: #f89728; }
-#home > .bg > .panel[data-value="2"] { background: #329aea; }
-#home > .bg > .panel[data-value="3"] { background: #ef8166; }
-#home > .bg > .panel[data-value="4"] { background: #6eba83; }
-#home > .bg > .panel[data-value="5"] { background: #b95cf7; }
 
 /** BOARD STYLES **/
 #board {
@@ -298,8 +293,34 @@ input[type="text"]:active, input[type="text"]:focus {
     opacity: 1.0;
 }
 #board > .questions > .category > .question > .wrapper.masked {
-    opacity: 0.3;
+  position: relative;
 }
+
+#board > .questions > .category > .question > .wrapper.masked::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  background: rgba(0,0,0,0.3);
+}
+
+#board > .questions > .category > .question > .wrapper.masked::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  background: url('https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c3d4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 #board > .questions > .category > .question > .wrapper:not(.masked):hover {
     opacity: 0.8;
 }
@@ -367,7 +388,8 @@ input[type="text"]:active, input[type="text"]:focus {
     font-size: 42px;
 }
 #question > .wrapper > .title,
-#question > .wrapper > .subtitle {
+
+#question > .wrapper .subtitle {
     margin-bottom: 48px;
     text-transform: uppercase;
     opacity: 0.7;
@@ -375,46 +397,53 @@ input[type="text"]:active, input[type="text"]:focus {
     font-weight: 800;
     font-size: 32px;
 }
-#question > .wrapper > .subtitle {
+#question > .wrapper .subtitle {
     margin-bottom: 16px;
     font-size: 42px;
 }
 
-#question > .wrapper > .text-container {
+#question > .wrapper .text-container {
     display: inline-block;
     margin-bottom: 32px;
     text-align: left;
 }
-#question > .wrapper > .text-container > audio {
+#question > .wrapper .text-container > audio {
     width: 100%;
     margin-top: 24px;
 }
-#question > .wrapper > .text-container > .choices {
+#question > .wrapper .text-container > .choices {
     margin-top: 24px;
     margin-left: 24px;
 }
-#question > .wrapper > .text-container > .choices > .choice {
+#question > .wrapper .text-container > .choices > .choice {
     transition: opacity 0.2s;
     opacity: 1.0;
 }
-#question > .wrapper > .text-container > .choices > .choice > em {
+#question > .wrapper .text-container > .choices > .choice > em {
     opacity: 0.8;
 }
 
-#question > .wrapper > .text-container > .choices.answer {
+#question > .wrapper .text-container > .choices.answer {
 }
-#question > .wrapper > .text-container > .choices.answer > .choice {
+#question > .wrapper .text-container > .choices.answer > .choice {
     opacity: 0.25;
 }
-#question > .wrapper > .text-container > .choices.answer > .choice.answer {
+#question > .wrapper .text-container > .choices.answer > .choice.answer {
     opacity: 1.0;
 }
 
-#question > .wrapper > .fact {
-    margin-bottom: 48px;
+#question > .wrapper .subtitle-f {
+  margin-top: 24px;
+  margin-bottom: -8px;
+  font-size: 0.75em;
 }
-#question > .wrapper > .answer {
-    margin-bottom: 96px;
+
+#question > .wrapper .fact {
+    margin-bottom: 48px;
+    font-size: 0.75em;
+}
+#question > .wrapper .answer:not(.choice) {
+    margin-bottom: 48px;
 }
 
 #question > .scores {
@@ -635,11 +664,11 @@ input[type="text"]:active, input[type="text"]:focus {
     width: 20%;
     height: 100%;
 }
-#scores > .bg > .panel[data-value="1"] { background: #f89728; }
-#scores > .bg > .panel[data-value="2"] { background: #329aea; }
-#scores > .bg > .panel[data-value="3"] { background: #ef8166; }
-#scores > .bg > .panel[data-value="4"] { background: #6eba83; }
-#scores > .bg > .panel[data-value="5"] { background: #b95cf7; }
+#home > .bg > .panel[data-value="1"], #scores > .bg > .panel[data-value="1"] { background: #f89728; }
+#home > .bg > .panel[data-value="2"], #scores > .bg > .panel[data-value="2"] { background: #444; }
+#home > .bg > .panel[data-value="3"], #scores > .bg > .panel[data-value="3"] { background: #f89728; }
+#home > .bg > .panel[data-value="4"], #scores > .bg > .panel[data-value="4"] { background: #444; }
+#home > .bg > .panel[data-value="5"], #scores > .bg > .panel[data-value="5"] { background: #f89728; }
 
 /** HOME SCREEN MANAGEMENT **/
 #home.active { display: table; }

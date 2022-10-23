@@ -1,160 +1,32 @@
-DATE	2022-10-27							
-CONTRIBUTORS	Christina D'Ambrogio;Stella Namuyige;Kevin Chen;							
-								
-QUESTIONS								
-CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	MEDIA FILE	HALF ALLOWED	TIME LIMIT
-Geography	100	text	Which continent has the Eiffel Tower? Test	Europe				30
-Geography	200	text	What is the piece of land called when it has water bordering it from three sides?	Peninsula				45
-Geography	300	choice	What country's flag is this?	Uruguay	Uruguay;Argentina;Paraguay;Greece	uruguay_flag.png		45
-Geography	400	text	Name three countries that start with 'F'.	Falkland Islands; Faroe Islands; Fiji; Finland; France; French Guiana; French Polynesia; French Southern And Antarctic Lands				60
-Geography	500	choice	What is the name of the newest ocean?	Southern Ocean	Grey Ocean;Indian Ocean;Southern Ocean;Australian Ocean			60
-Surprise Me	100	text	What is the significance of the following sequence of numbers: 2 3 5 7 11 13 17	The starting sequence of prime numbers				30
-Surprise Me	200	text	What are the three levels of government in Canada?	Municipal; Provincial; Federal				45
-Surprise Me	300	choice	How many teeth does a normal human have?	32	24;28;32;36			45
-Surprise Me	400	text	Which famous art piece was recently attacked with cake by a man in a wheelchair?	Mona Lisa				60
-Surprise Me	500	text	80% of the world's supply of what comes from Canada?	Maple Syrup				60
-Entertainment	100	choice	What imaginary African nation is ruled by the comic book hero Black Panther?	Wakanda	Canada;Wakanda;Rwanda;Magic Kingdom			30
-Entertainment	200	choice	According to 'Forbes' who is now Hollywood's highest-paid actor?	Dwayne Johnson	Tom Cruise;Dwayne Johnson;Will Smith;Ryan Reynolds			45
-Entertainment	300	choice	How many total seasons of 'Friends' and 'The Office (US)' are there?	19	18;19;20;21			45
-Entertainment	400	text	What is the top streaming show of all-time on Netflix?	Squid Game				60
-Entertainment	500	text	Which active or inactive NBA player owns a stake in the Pittsburgh Penguins; Boston Red Sox; and Liverpool FC?	Lebron James				60
-Music	100	text	What is Jay-Z's real name?	Shawn Carter				30
-Music	200	choice	Who was the first member to leave One Direction?	Zayn	Zayn;Harry;Nial;Ron			30
-Music	300	choice	Who was the composer for the New World Symphony?	Antonin Dvorak	Ludwig Van Beethoven;Wolfgang Amadeus Mozart;Antonin Dvorak;Frederic Chopin			45
-Music	400	text	Identify the song title and artist.	Creep - Radiohead		Radiohead-Creep.m4a	Yes	30
-Music	500	choice	What was the original name of Destiny's Child?	Girl's Tyme	Destiny's Sister;Gurls;Original Gurls;Girl's Tyme			45
-Mercury	100	text	What planet from the Sun is Mercury?	First				30
-Mercury	200	choice	The Roman god Mercury is not a god of which of the following?	Artists	Shopkeepers;Tricksters;Thieves;Artists			45
-Mercury	300	choice	Mercury is the only metal element that is liquid at standard temperature and pressure. What is its approximate melting point?	-39 degrees celsius	0 degrees celsius;-21 degrees celsius;-39 degrees celsius;-100 degrees celsius			45
-Mercury	400	choice	What league has a team with the name 'Mercury'?	WNBA	WNBA;NHL;NFL;MLS			60
-Mercury	500	choice	How many Mercury-sized planets can fit in the Sun?	21.2 million	12.3 million;15.4 million;21.2 million; 35.1 million			60
-								
-GAUNTLET								
-TRACK TITLE	TRACK ARTIST							
-Mr. Brightside	The Killers							
-Ode to Joy	Ludwig Van Beethoven							
-22	Taylor Swift							
-Crazy in Love	Beyonce ft. Jay -Z							
-Call Me Maybe	Carly Rae Jepsen							
-Driver's License	Olivia Rodrigo							
-In Da Club	50 Cent							
-								
-AUDIO FILE	Gauntlet (2022-06-02).m4a							
-								
-Anything below this area will not be processed by the TriviaApp								
-Orange background indicates VTF keywords								
-								
-FEATURE REQUEST	SUPPORT IMAGES							
-FEATURE REQUEST	Visual timer bar							
-FEATURE REQUEST	Display currently loaded file name							
-FEATURE REQUEST	Ability to read game file from URL							
-FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
-FEATURE REQUEST	Configurable rules displayed on splash screen							
-FEATURE REQUEST	"On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions"							
-FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
-FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
-FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
-FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
-FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
-FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
-FEATURE REQUEST	"When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)"							
-								
-QUESTION IDEAS	"Themes: Game of thrones, sci-fi"							
-QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
-QUESTION IDEAS	Image/Video based questions							
-								
-CRITICISMS	"Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?"							
-CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
-CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
-CRITICISMS	"Some questions were too difficult for their point value. Could have a +/- for answers like ""be within 3 years of the answer"""							
-								
-TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						
-								
-Canadian Trivia Questions and Answers								
-								
-1. WHICH CANADIAN CITY IS CONSIDERED �HOLLYWOOD NORTH�?								
-								
-"While you may think Toronto is the answer, the true (and original) �Hollywood North� is Vancouver!�"								
-People started calling Vancouver �Hollywood North� in the 1970s. The city is second in TV production and third for feature film production in North America. (Los Angeles and New York are first and second).								
-"Vancouver plays host to many American series and movies such as Riverdale, Upload and Deadpool."								
-T.O. is also a popular filming location and is sometimes included as part of �Hollywood North�.�								
-								
-2. HOW MANY POINTS DOES THE MAPLE LEAF ON THE FLAG HAVE?								
-								
-Our flag has 11 points! But here�s a little more Canadian trivia �								
-Did you know the Canadian flag was designed with 13 points? It was changed to 11 points because it was hard to see the maple leaf shape from a distance.								
-								
-3. WHICH CITY IS HOME TO NORTH AMERICA�S LARGEST MALL?								
-								
-"It�s Edmonton, Alberta � home of the West Edmonton Mall. This massive shopping center is 5.3 million square feet and has an entire waterpark within its walls."								
-								
-4. WHICH CANADIAN CHAIN FIRST OPENED IN HAMILTON IN 1964								
-								
-"It�s the Canadian classic, Tim Hortons! And has it ever grown. As of 2020, the coffee chain had over 4,949 restaurants across the globe."								
-								
-5. WHERE IS CANADA�S MOST VISITED NATIONAL HISTORIC SITE?								
-								
-"If you head over to Halifax, Nova Scotia, you can visit the Halifax Citadel National Historic Site of Canada! Built as a military fortification, it�s now a tourist�s paradise. The site has a rich history and a beautiful view of the city.��With it�s history, delicious lobster, and beautiful views, it�s no wonder Halifax made the�23 most magical places Canadians�are visiting during the summer."								
-								
-6. WHICH CITY HOSTS NORTH AMERICA�S LARGEST SINGLE DAY PARADE? (BONUS POINTS IF YOU CAN GUESS THE PARADE!)								
-								
-"It�s the Carabina Grand Parade in Toronto, Ontario! With a parade route of 3.6 km and taking over ten hours from start to finish, it�s definitely a celebration to watch out for. The parade is part of Toronto�s 3-week long Caribbean Caribana festival. The festival started in 1967 and is the biggest cultural festival in North America.�"								
-								
-7. WHAT IS CANADA�S NATIONAL SPORT?								
-								
-"Trick question � We�ve got two! Hockey and Lacrosse are our national sports, as declared by the �National Sports of Canada Act�."								
-"(If you got this one, you may be a Canadian trivia Wiz!)"								
-								
-8. EAT UP! WHICH CITY HAS THE MOST RESTAURANTS PER CAPITA IN CANADA?								
-								
-"Kudos if you guess Victoria, BC! While reports vary, most studies say Victoria leads the pack with 4.6 restaurants per 1,000 people. Runners up include Vancouver, Niagara Falls and Montreal.�"								
-								
-9. WHICH CANADIAN CITY RANKS AS THE MOST EDUCATED IN THE COUNTRY?								
-								
-"With 1/3 of the city�s adult population having a university degree, the answer is our national capital � Ottawa. But that doesn�t mean it�s the most intelligent city in Canada. That award goes to�Winnipeg, Manitoba."								
-								
-10. WHICH CITY WAS HOME TO THE FIRST NORTH AMERICAN YMCA?								
-								
-It all started in Montreal in 1851!								
-"Bonus Canadian Trivia Fact: There are now over 1,000 YMCAs in Canada.�"								
-								
-11. WHAT IS THE MOST PURCHASED GROCERY ITEM IN CANADA?								
-								
-"It�s the Canadian classic, Kraft Dinner! Surveys show it is our nation�s go-to pick when we go shopping, and it�s hard to deny considering how quick and tasty it is."								
-								
-12. WHAT FRUIT DOES CANADA EXPORT THE MOST OF?								
-								
-"The answer is blueberries! Canada exports tens of millions of pounds of blueberries and is the world�s second largest producer of the berry. In fact, blueberries account for 61.2% of our export dollars."								
-								
-13. WHAT IS CANADA�S OLDEST CITY?								
-								
-"Established in 1497, St. Johns, Newfoundland is the oldest city in Canada. The next established city was Quebec City but that wasn�t until 1608."								
-								
-14. HOW MANY TIME ZONES DOES CANADA HAVE?								
-								
-"There are six time zones across Canada: Pacific, Mountain, Central, Eastern, Atlantic, and Newfoundland.�"								
-								
-15. WHICH CANADIAN CITY HAS THE MOST TOURISTS?								
-								
-This honour goes to Toronto with over 27.5 million visitors a year!�								
-								
-"16. ONLY ONE PROVINCE IS OFFICIALLY BILINGUAL, CAN YOU GUESS WHICH ONE?"								
-								
-"Canada, as a country, is officially bilingual, but most provinces are either French or English. New Brunswick is the only province where French and English are both official languages.�"								
-								
-17. HOW MANY OCEANS BORDER CANADA?								
-								
-"There are three oceans total. The Pacific, the Atlantic, and the Arctic all surround our nation.�"								
-								
-18. WHICH PROVINCE IS HOME TO CANADA�S TALLEST MOUNTAIN?								
-								
-"Mount Logan is Canada�s highest peak at 5,959 meters, and it stands tall in the Yukon! It�s also believed to have the largest base circumference in the world.��"								
-The only higher mountain in North America is Denali in Alaska.								
-								
-19. IN WHICH PROVINCE CAN YOU FIND�A PROVINCIAL PARK NAMED �BLOW ME DOWN� AND�THE CITIES OF �GOOBIES� AND �COME BY CHANCE�?								
-								
-These wildly named places are all on the East Coast in the province of Newfoundland! This picture specifically is from Blow Me Down Provincial Park.								
-								
-20. Last One! 80% of the world�s supply of what comes from Canada?								
-								
-80% of the world�s supply of maple syrup comes from Canada! Eat up!								
+DATE	2022-10-27									
+CONTRIBUTORS	Christina D'Ambrogio;Stella Namuyige;Kevin Chen									
+										
+QUESTIONS										
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	FUN FACT	QUESTION MEDIA FILE	ANSWER MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Ghoulish Gals	100	choice	What is the real name of the Marvel fictional character, Scarlet Witch?	Wanda Maximoff	Wanda Rominoff;Natasha Maximoff;Wanda Maximoff;Natasha Rominoff			2022 - Halloween Trivia/1 - Ghoulish Gals/1 - Answer - wanda maximoff.jpg		60
+Ghoulish Gals	200	choice	In the 1976 horror film, 'Carrie', what gets dumped on Carrie at the prom?	Pig's Blood	Pig's Blood;Spaghetti Sauce;Red Paint;Confetti			2022 - Halloween Trivia/1 - Ghoulish Gals/2 - Answer - carrie.jpg		60
+Ghoulish Gals	300	text	Name these two females who solve mysteries involving supposedly supernatural creatures. Both names must be provided.	Daphne & Velma		'Scooby-Doo' premiered on September 13, 1969	2022 - Halloween Trivia/1 - Ghoulish Gals/3 - Question - Daphne-Velma.jpg	2022 - Halloween Trivia/1 - Ghoulish Gals/3 - Answer - Scooby-Doo.jpg		60
+Ghoulish Gals	400	text	What is the name of the 90's American television series where a young woman is considered the 'Chosen One'? She stands up against supernatural creatures and the forces of darkness.	Buffy the Vampire Slayer		This American television series which premiered in 1997, was based on the 1992 film of the same name.		2022 - Halloween Trivia/1 - Ghoulish Gals/4 - Answer - Buffy the Vampire Slayer.JPG		60
+Ghoulish Gals	500	text	In the 1993 Disney film, 'Hocus Pocus', what are the names of the Sanderson sisters? Hint: There are three sisters. You must name all three.	Winifred, Sarah & Mary				2022 - Halloween Trivia/1 - Ghoulish Gals/5 - Answer - Winifred-Sarah-Mary-Hocus-Pocus.jpg		60
+Hellish Haunters	100	text	What is the name of the 1818 novel by Mary Shelley, where a young scientist creates a sapient creature in an unorthodox scientific experiment?	Frankenstein				2022 - Halloween Trivia/2 - Hellish Haunters/1 - Answer - Frankenstein.jpg		60
+Hellish Haunters	200	choice	In the 1897 novel titled, 'Dracula', where does Count Dracula reside?	Transylvania, Romania	Transylvania, Romania;Predjama, Slovenia;Edinburgh, Scotland;Casa Loma, Canada		2022 - Halloween Trivia/2 - Hellish Haunters/2 - Question - Dracula.JPG			60
+Hellish Haunters	300	choice	In the film, 'A Nightmare on Elm Street', what is the colour of Freddy Kruger's sweater?	Red & Green	Red & Black;Red & Green;Red & Grey;Plaid			2022 - Halloween Trivia/2 - Hellish Haunters/3 - Answer - Freddy Kruger.JPG		60
+Hellish Haunters	400	choice	Jason from 'Friday the 13th', likes spending time at this camp.	Camp Crystal Lake	Camp North Star;Kamp Krusty;Kamp Kikakee;Camp Crystal Lake		2022 - Halloween Trivia/2 - Hellish Haunters/4 - Question - Jason.jpg	2022 - Halloween Trivia/2 - Hellish Haunters/4 - Answer - Camp Crystal Lake.jpg		60
+Hellish Haunters	500	choice	In the 1978 movie titled 'Halloween', what is the name of the town Michael Myers haunted?	Haddonfield, Illinois	Amityville, New York;Haddonfield, Illinois;Silent Hill, West Virginia;Cuesta Verde, California		2022 - Halloween Trivia/2 - Hellish Haunters/5 - Question - Michael Myers.jpg	2022 - Halloween Trivia/2 - Hellish Haunters/5 - Answer - Haddonfield.jpg		60
+Ominous Creatures	100	choice	How do you ward off a vampire?	All of the above	Garlic;Holy Water;Sunlight;All of the above					60
+Ominous Creatures	200	text	In this American television sitcom which premiered in 1996, what was the name of the black talking cat on 'Sabrina the Teenage Witch'?	Salem (Saberhagen)		He was a 500-year-old witch who was sentenced to spend 100 years as a cat by the Witches Council as punishment for attempting to take over the world.	2022 - Halloween Trivia/3 - Ominous Creatures/2 - Question - cat - Sabrina.jpg	2022 - Halloween Trivia/3 - Ominous Creatures/2 - Answer - cat - Salem.jpg		60
+Ominous Creatures	300	choice	How do you kill a werewolf?	Silver Bullet	Silver Bullet;Golden Blade;Blackjack;Grey Stake		2022 - Halloween Trivia/3 - Ominous Creatures/3 - Question - Werewolf.jpg			60
+Ominous Creatures	400	choice	Birds are a prominent motif in Alfred Hitchcock's 1960 psychological horror film, 'Psycho'. Which stuffed bird (or birds) is mounted on Norman Bates' wall in the parlor?	Owl	Crane;Phoenix;Owl;All of the above	Crane is the last name of Marion Crane. The movie takes place in Phoenix, Arizona. There are multiple birds in Norman Bates' parlor in addition to the owl, such as a crow, a pheasant, etc.		2022 - Halloween Trivia/3 - Ominous Creatures/4 - Answer - owl.png		60
+Ominous Creatures	500	choice	What was the name of Wendy's pet spider on 'The Addams Family'?	Homer	Bart;Lisa;Marge;Homer			2022 - Halloween Trivia/3 - Ominous Creatures/5 - Answer - Homer.jpg		60
+Scary Screenshots	100	text	Name this character.	Chucky (Child's Play)			2022 - Halloween Trivia/4 - Scary Screenshots/1 - Question - Chucky.jpg	2022 - Halloween Trivia/4 - Scary Screenshots/1 - Answer - Chucky - Child_s Play.jpg		60
+Scary Screenshots	200	text	Name this character.	Beetlejuice			2022 - Halloween Trivia/4 - Scary Screenshots/2 - Question - Bettlejuice.jpg	2022 - Halloween Trivia/4 - Scary Screenshots/2 - Answer - Bettlejuice.jpg		60
+Scary Screenshots	300	text	Name this character.	Pinhead (Hellraiser)			2022 - Halloween Trivia/4 - Scary Screenshots/3 - Question - Pinehead.jpg	2022 - Halloween Trivia/4 - Scary Screenshots/3 - Answer - Pinehead - Hellraiser.jpg		60
+Scary Screenshots	400	text	Name this character (NOT the actor). You only need to provide the first name.	Regan MacNeil (Linda Blair - The Exorcist)			2022 - Halloween Trivia/4 - Scary Screenshots/4 - Question - Regan MacNeil.jpg	2022 - Halloween Trivia/4 - Scary Screenshots/4 - Answer - Regan MacNeil - The Exorcist.jpg		60
+Scary Screenshots	500	text	Name this character (NOT the actor). You only need to provide the first name.	Damien Thorn (The Omen)			2022 - Halloween Trivia/4 - Scary Screenshots/5 - Question - Damien Thorn.jpg	2022 - Halloween Trivia/4 - Scary Screenshots/5 - Answer - Damien Thorn - The Omen.jpg		60
+Terror Tunes	100	text	Name the show.	The Addams Family			2022 - Halloween Trivia/5 - Terror Tunes/1 - Question - The Addams Family.mp3	2022 - Halloween Trivia/5 - Terror Tunes/1 - Answer - The Addams Family.jpg		60
+Terror Tunes	200	text	Name the movie.	Halloween		'Halloween Theme Song' was written by John Carpenter, Cody Carpenter and Daniel Davies	2022 - Halloween Trivia/5 - Terror Tunes/2 - Question - Halloween.mp3	2022 - Halloween Trivia/5 - Terror Tunes/2 - Answer - Halloween.jpg		60
+Terror Tunes	300	text	Name the show.	Stranger Things			2022 - Halloween Trivia/5 - Terror Tunes/3 - Question - Stranger Things.mp3	2022 - Halloween Trivia/5 - Terror Tunes/3 - Answer - Stranger Things.png		60
+Terror Tunes	400	text	Name the artist and the song.	Michael Jackson - Thriller (1982)			2022 - Halloween Trivia/5 - Terror Tunes/4 - Question - Michael Jackson - Thriller.mp3	2022 - Halloween Trivia/5 - Terror Tunes/4 - Answer - Michael Jackson - Thriller.jpg		60
+Terror Tunes	500	text	Name this television series.	The Munsters		Uma Thurman' is a 2015 song by American rock band 'Fall Out Boy', which features the theme music from the television series 'The Munsters' (1964 - 1966).	2022 - Halloween Trivia/5 - Terror Tunes/5 - Question - The Munsters.mp3	2022 - Halloween Trivia/5 - Terror Tunes/5 - Answer - The Munsters.JPG		60
+BONUS	500	text	The character 'Ghostface' wore a Halloween mask as depicted below. What was the name of the painting and the artist which inspired the creation of this iconic mask?	The Scream by Norwegian artist, Edvard Munch (1983)			2022 - Halloween Trivia/Bonus Question - Ghost/Bonus - Question - Ghostface.jpg	2022 - Halloween Trivia/Bonus Question - Ghost/Bonus - Answer - The Scream.jpg	Yes	60
+END	GAME
