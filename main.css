@@ -407,7 +407,7 @@ input[type="text"]:active, input[type="text"]:focus {
     margin-bottom: 32px;
     text-align: left;
 }
-#question > .wrapper .text-container > audio {
+#question > .wrapper audio {
     width: 100%;
     margin-top: 24px;
 }
