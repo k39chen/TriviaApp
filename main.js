@@ -62,7 +62,14 @@ $(document).ready(function() {
         showScreen("home");
     });
     $("#board > .scores").on("click", "> .finish-btn", function(ev) {
+      activeQuestion = {
+          categoryId: 'BONUS',
+          questionId: 500,
+          question: window.bonusQuestions
+      };
+
         showScreen("bonus");
+        // showBonus();
     });
     $("#bonus").on("click", "> .back-btn", function(ev) {
         var $board = $("#board");
@@ -160,7 +167,12 @@ $(document).ready(function() {
         showAnswer();
     });
     $("#question").on("click", ".close-btn", function() {
-        backToBoard();
+        if (activeQuestion && activeQuestion.categoryId === 'BONUS') {
+          backToBoard();
+          showScreen("scores");
+        } else {
+          backToBoard();
+        }
     });
     $("#question > .timer").on("click", ".start-btn", function() {
         startTimer();
@@ -276,6 +288,7 @@ $(document).ready(function() {
             if (_.isEqual(firstColCell, "QUESTIONS")) {
                 rowIndexStart = rowIndex;
             }
+            // if (_.isEqual(firstColCell, "BONUS")) {
             if (_.isEqual(firstColCell, "GAUNTLET")) {
                 rowIndexEnd = rowIndex - 1;
                 break;
@@ -288,11 +301,11 @@ $(document).ready(function() {
         }
         var tsvRows = cleanTSVRows(tsvData, rowIndexStart, rowIndexEnd);
         var categoryColors = [
-            "#329aea",
-            "#f89728",
-            "#6eba83",
-            "#b95cf7",
-            "#ef8166"
+            "#115744",
+            "#1C8DA3",
+            "#AED457",
+            "#729C14",
+            "#CA5215"
         ];
         var colIndexMapping = {
             "CATEGORY": 0,
@@ -301,9 +314,11 @@ $(document).ready(function() {
             "QUESTION TEXT": 3,
             "ANSWER": 4,
             "MULTIPLE CHOICES": 5,
-            "MEDIA FILE": 6,
-            "HALF ALLOWED": 7,
-            "TIME LIMIT": 8
+            "FUN FACT": 6,
+            "QUESTION MEDIA FILE": 7,
+            "ANSWER MEDIA FILE": 8,
+            "HALF ALLOWED": 9,
+            "TIME LIMIT": 10
         };
         var result = {};
         var finalResult = {};
@@ -320,7 +335,10 @@ $(document).ready(function() {
             var questionText = rowData[colIndexMapping["QUESTION TEXT"]];
             var answer = rowData[colIndexMapping["ANSWER"]];
             var multipleChoices = rowData[colIndexMapping["MULTIPLE CHOICES"]];
-            var mediaFile = rowData[colIndexMapping["MEDIA FILE"]];
+            var funFact = rowData[colIndexMapping["FUN FACT"]];
+            var questionMediaFile = rowData[colIndexMapping["QUESTION MEDIA FILE"]];
+            var answerMediaFile = rowData[colIndexMapping["ANSWER MEDIA FILE"]];
+            
             var halfAllowed = rowData[colIndexMapping["HALF ALLOWED"]];
             var timeLimit = rowData[colIndexMapping["TIME LIMIT"]];
 
@@ -340,19 +358,33 @@ $(document).ready(function() {
             if (_.isEqual(halfAllowed, "Yes")) {
                 result[category][scoreValue].halfAllowed = true;
             }
-            result[category][scoreValue].a = answer;
+            if (!result[category][scoreValue].a) {
+              result[category][scoreValue].a = {};
+            }
 
-            if (!_.isEmpty(mediaFile)) {
-                if (mediaFile.indexOf(".m4a") >= 0) {
-                    result[category][scoreValue].q.audioFile = "media/" + mediaFile;
-                } else if (mediaFile.indexOf(".png") >= 0 || mediaFile.indexOf(".jpg") >= 0 || mediaFile.indexOf(".gif") >= 0) {
-                    result[category][scoreValue].q.imageFile = "media/" + mediaFile;
-                } else if (mediaFile.indexOf(".webm") >= 0 || mediaFile.indexOf(".mp4") >= 0) {
-                    result[category][scoreValue].q.videoFile = "media/" + mediaFile;
+            if (!_.isEmpty(questionMediaFile)) {
+                if (questionMediaFile.indexOf(".m4a") >= 0 || questionMediaFile.indexOf(".mp3") >= 0) {
+                    result[category][scoreValue].q.audioFile = "media/" + questionMediaFile;
+                } else if (questionMediaFile.indexOf(".png") >= 0 || questionMediaFile.indexOf(".jpg") >= 0 || questionMediaFile.indexOf(".JPG") >= 0 || questionMediaFile.indexOf(".gif") >= 0) {
+                    result[category][scoreValue].q.imageFile = "media/" + questionMediaFile;
+                } else if (questionMediaFile.indexOf(".webm") >= 0 || questionMediaFile.indexOf(".mp4") >= 0) {
+                    result[category][scoreValue].q.videoFile = "media/" + questionMediaFile;
                 }
             }
             result[category][scoreValue].q.type = questionType;
             result[category][scoreValue].q.text = questionText;
+
+            if (!_.isEmpty(answerMediaFile)) {
+              if (answerMediaFile.indexOf(".m4a") >= 0 || answerMediaFile.indexOf(".mp3") >= 0) {
+                  result[category][scoreValue].a.audioFile = "media/" + answerMediaFile;
+              } else if (answerMediaFile.indexOf(".png") >= 0 || answerMediaFile.indexOf(".jpg") >= 0 || answerMediaFile.indexOf(".JPG") >= 0 || answerMediaFile.indexOf(".gif") >= 0) {
+                  result[category][scoreValue].a.imageFile = "media/" + answerMediaFile;
+              } else if (answerMediaFile.indexOf(".webm") >= 0 || answerMediaFile.indexOf(".mp4") >= 0) {
+                  result[category][scoreValue].a.videoFile = "media/" + answerMediaFile;
+              }
+            }
+            result[category][scoreValue].a.text = answer;
+            result[category][scoreValue].a.funFact = funFact;
 
             if (_.isEqual(questionType, "choice")) {
                 var choices = multipleChoices.split(";");
@@ -381,6 +413,103 @@ $(document).ready(function() {
     function initTSVBonusQuestion(tsvData) {
         var rowIndexStart = -1;
         var rowIndexEnd = -1;
+
+        /*
+        // we will identify the contributors based on whether or not the first cell of the
+        // row contains the "Gauntlet" keyword
+        for (var rowIndex = 0; rowIndex < tsvData.length; rowIndex++) {
+          var rowData = tsvData[rowIndex] || [];
+          var firstColCell = rowData[0];
+
+          if (_.isEqual(firstColCell, "BONUS")) {
+              rowIndexStart = rowIndex;
+          }
+          if (_.isEqual(firstColCell, "END")) {
+              rowIndexEnd = rowIndex;
+              break;
+          }
+        }
+        // determine if we found the correct row range
+        if (_.isEqual(rowIndexStart, -1) || _.isEqual(rowIndexEnd)) {
+            console.error("Malformed VTF file, missing bonus question!");
+            return;
+        }
+        var tsvRows = cleanTSVRows(tsvData, rowIndexStart, rowIndexEnd);
+
+        var colIndexMapping = {
+          "CATEGORY": 0,
+          "SCORE VALUE": 1,
+          "QUESTION TYPE": 2,
+          "QUESTION TEXT": 3,
+          "ANSWER": 4,
+          "MULTIPLE CHOICES": 5,
+          "FUN FACT": 6,
+          "QUESTION MEDIA FILE": 7,
+          "ANSWER MEDIA FILE": 8,
+          "HALF ALLOWED": 9,
+          "TIME LIMIT": 10
+      };
+        var rowData = _.first(tsvRows);
+        var category = rowData[colIndexMapping["CATEGORY"]];
+        var scoreValue = rowData[colIndexMapping["SCORE VALUE"]];
+        var questionType = rowData[colIndexMapping["QUESTION TYPE"]];
+        var questionText = rowData[colIndexMapping["QUESTION TEXT"]];
+        var answer = rowData[colIndexMapping["ANSWER"]];
+        var multipleChoices = rowData[colIndexMapping["MULTIPLE CHOICES"]];
+        var funFact = rowData[colIndexMapping["FUN FACT"]];
+        var questionMediaFile = rowData[colIndexMapping["QUESTION MEDIA FILE"]];
+        var answerMediaFile = rowData[colIndexMapping["ANSWER MEDIA FILE"]];
+        
+        var halfAllowed = rowData[colIndexMapping["HALF ALLOWED"]];
+        var timeLimit = rowData[colIndexMapping["TIME LIMIT"]];
+
+        var bonusQuestion = {};
+        if (!bonusQuestion.q) {
+            bonusQuestion.q = {};
+        }
+        bonusQuestion.timer = parseInt(timeLimit, 10);
+        if (_.isNaN(bonusQuestion.timer)) {
+            bonusQuestion.timer = 60;
+        }
+        if (_.isEqual(halfAllowed, "Yes")) {
+            bonusQuestion.halfAllowed = true;
+        }
+        if (!bonusQuestion.a) {
+          bonusQuestion.a = {};
+        }
+
+        if (!_.isEmpty(questionMediaFile)) {
+            if (questionMediaFile.indexOf(".m4a") >= 0 || questionMediaFile.indexOf(".mp3") >= 0) {
+                bonusQuestion.q.audioFile = "media/" + questionMediaFile;
+            } else if (questionMediaFile.indexOf(".png") >= 0 || questionMediaFile.indexOf(".jpg") >= 0 || questionMediaFile.indexOf(".JPG") >= 0 || questionMediaFile.indexOf(".gif") >= 0) {
+                bonusQuestion.q.imageFile = "media/" + questionMediaFile;
+            } else if (questionMediaFile.indexOf(".webm") >= 0 || questionMediaFile.indexOf(".mp4") >= 0) {
+                bonusQuestion.q.videoFile = "media/" + questionMediaFile;
+            }
+        }
+        bonusQuestion.q.type = questionType;
+        bonusQuestion.q.text = questionText;
+
+        if (!_.isEmpty(answerMediaFile)) {
+          if (answerMediaFile.indexOf(".m4a") >= 0 || answerMediaFile.indexOf(".mp3") >= 0) {
+              bonusQuestion.a.audioFile = "media/" + answerMediaFile;
+          } else if (answerMediaFile.indexOf(".png") >= 0 || answerMediaFile.indexOf(".jpg") >= 0 || answerMediaFile.indexOf(".JPG") >= 0 || answerMediaFile.indexOf(".gif") >= 0) {
+              bonusQuestion.a.imageFile = "media/" + answerMediaFile;
+          } else if (answerMediaFile.indexOf(".webm") >= 0 || answerMediaFile.indexOf(".mp4") >= 0) {
+              bonusQuestion.a.videoFile = "media/" + answerMediaFile;
+          }
+        }
+        bonusQuestion.a.text = answer;
+        bonusQuestion.a.funFact = funFact;
+        
+        console.log("Bonus Question:", bonusQuestion);
+
+        window.bonusQuestions = bonusQuestion;
+
+        createBonus();
+
+        if (true) return;
+        */
 
         // we will identify the contributors based on whether or not the first cell of the
         // row contains the "Gauntlet" keyword
@@ -632,27 +761,23 @@ $(document).ready(function() {
         var $timer = $question.find("> .timer");
         var $scores = $question.find("> .scores");
 
-        var $subtitleQ = $question.find("> .wrapper > .subtitle-q");
-        var $text = $question.find("> .wrapper > .text-container > .text");
-        var $choices = $question.find("> .wrapper > .text-container > .choices");
-        var $showAnswerBtn = $question.find("> .wrapper > .show-answer-btn");
+        var $questionWrapper = $question.find("> .wrapper > .question-wrapper");
+        var $textContainer = $question.find("> .wrapper > .question-wrapper > .text-container");
+        var $text = $question.find("> .wrapper > .question-wrapper > .text-container > .text");
+        var $choices = $question.find("> .wrapper > .question-wrapper > .text-container > .choices");
+        var $showAnswerBtn = $question.find("> .wrapper > .question-wrapper > .show-answer-btn");
 
-        var $subtitleA = $question.find("> .wrapper > .subtitle-a");
-        var $answer = $question.find("> .wrapper > .answer");
-        var $subtitleF = $question.find("> .wrapper > .subtitle-f");
-        var $fact = $question.find("> .wrapper > .fact");
-        var $closeBtn = $question.find("> .wrapper > .close-btn");
-
+        var $answerWrapper = $question.find("> .wrapper > .answer-wrapper");
+        var $answerText = $question.find("> .wrapper > .answer-wrapper > .answer > .text");
+        var $answerMediaContainer = $question.find("> .wrapper > .answer-wrapper > .answer > .media-container");
+        var $subtitleF = $question.find("> .wrapper > .answer-wrapper > .subtitle-f");
+        var $fact = $question.find("> .wrapper > .answer-wrapper > .fact");
+        
         var category = questions[categoryId];
         var question = category[questionId];
 
-        if (_.isEqual(category.category, "Popculture")) {
-            $title.html("<b>Pop</b>" + "<em>" + questionId + "</em>");
-        } else if (_.isEqual(category.category, "Geography")) {
-            $title.html("<b>Geo</b>" + "<em>" + questionId + "</em>");
-        } else {
-            $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
-        }
+        $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
+        $questionWrapper.css({ display: "block" });
         $scores.css({ display: "none" });
 
         $timer.css({ display: "block" });
@@ -683,7 +808,7 @@ $(document).ready(function() {
                 default: break;
                 }
                 var $choice = $("<div class='choice' data-value='" + choice + "'><em>" + prefix + "</em>" + choice + "</div>");
-                if (choice === question.a) {
+                if (choice === question.a.text) {
                     $choice.addClass("answer");
                 }
                 $choices.append($choice);
@@ -695,58 +820,49 @@ $(document).ready(function() {
         $question.find(".image-container").remove();
 
         if (question.q.audioFile) {
-            $text.after("<audio controls preload='none'><source src='" + question.q.audioFile + "' type='audio/mp4' height='32' /></audio>");
+            $textContainer.after("<audio controls preload='none'><source src='" + question.q.audioFile + "' type='audio/mp4' height='32' /></audio>");
         } else if (question.q.videoFile) {
-            $text.after("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 320px; margin-top: 12px;'><source src='" + question.q.videoFile + "' type='video/mp4' /></video></div>");
+            $textContainer.after("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 480px; margin-bottom: 12px;'><source src='" + question.q.videoFile + "' type='video/mp4' /></video></div>");
         } else if (question.q.imageFile) {
-            $text.after("<div class='image-container' style='text-align: center;'><img src='" + question.q.imageFile + "' style='height: 320px; margin-top: 12px;' /></div>");
+            $textContainer.after("<div class='image-container' style='text-align: center;'><img src='" + question.q.imageFile + "' style='height: 480px; margin-bottom: 12px;' /></div>");
         }
-        $answer.html(question.a);
+        $answerText.html(question.a.text);
+        $fact.html(question.a.funFact);
 
-        if (question.f) {
-            $fact.html(question.f);
+        if (question.a.audioFile) {
+            $answerMediaContainer.html("<audio controls preload='none'><source src='" + question.a.audioFile + "' type='audio/mp4' height='32' /></audio>");
+        } else if (question.a.videoFile) {
+            $answerMediaContainer.html("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 480px; margin-top: 12px;'><source src='" + question.a.videoFile + "' type='video/mp4' /></video></div>");
+        } else if (question.a.imageFile) {
+            $answerMediaContainer.html("<div class='image-container' style='text-align: center;'><img src='" + question.a.imageFile + "' style='height: 480px; margin-top: 12px;' /></div>");
+        }
+        if (question.a.funFact) {
             $subtitleF.css({ display: "block" });
-            $fact.css({ display: "block" });
+            $fact.html(question.a.funFact);
         } else {
             $subtitleF.css({ display: "none" });
-            $fact.css({ display: "none" });
+            $fact.empty();
         }
-        $question.css({ display: "table", left: "-100%" }).stop().animate({ left: 0 }, 500);
-
-        $subtitleQ.animate({ opacity: 0.7 }, 500);
-        $text.animate({ opacity: 1.0 }, 500);
-        $choices.animate({ opacity: 1.0 }, 500);
-        $showAnswerBtn.animate({ opacity: 1.0 }, 500);
-
         if (question.q.type === "choice") {
             $choices.css({ display: "block" });
-            $subtitleA.css({ display: "none" });
-            $answer.css({ display: "none" });
         } else {
             $choices.css({ display: "none" });
-            $subtitleA.css({ display: "block", opacity: 0 });
-            $answer.css({ display: "block", opacity: 0 });
         }
-        $subtitleF.css({ opacity: 0 });
-        $fact.css({ opacity: 0 });
-        $closeBtn.css({ opacity: 0 });
+        $questionWrapper.css({ display: "block" });
+        $showAnswerBtn.css({ display: "block" });
+        $answerWrapper.css({ display: "none" });
+
+        $question.css({ display: "table", left: "-100%" }).stop().animate({ left: 0 }, 500);
     }
     function showAnswer() {
         var $question = $("#question");
 
         var $scores = $question.find("> .scores");
         var $timer = $question.find("> .timer");
+        var $closeBtn = $question.find("> .wrapper > .answer-wrapper > .close-btn");
 
-        var $subtitleQ = $question.find("> .wrapper > .subtitle-a");
-        var $text = $question.find("> .wrapper > .text-container > .text");
-        var $choices = $question.find("> .wrapper > .text-container > .choices");
-        var $showAnswerBtn = $question.find("> .wrapper > .show-answer-btn");
-
-        var $subtitleA = $question.find("> .wrapper > .subtitle-a");
-        var $answer = $question.find("> .wrapper > .answer");
-        var $subtitleF = $question.find("> .wrapper > .subtitle-f");
-        var $fact = $question.find("> .wrapper > .fact");
-        var $closeBtn = $question.find("> .wrapper > .close-btn");
+        var $questionWrapper = $question.find("> .wrapper > .question-wrapper");
+        var $answerWrapper = $question.find("> .wrapper > .answer-wrapper");
 
         stopTimer();
 
@@ -758,15 +874,112 @@ $(document).ready(function() {
             $scores.find("> span.team.half-allowed").hide();
         }
         $scores.css({ display: "block" });
+        $answerWrapper.css({ display: "block" });
+
+        $questionWrapper.css({ display: "none" });
         $timer.css({ display: "none" });
 
-        $choices.addClass("answer");
-        $showAnswerBtn.animate({opacity: 0}, 500);
-        $subtitleA.animate({opacity: 0.7}, 500);
-        $answer.animate({opacity: 1.0}, 500);
-        $subtitleF.animate({opacity: 0.7}, 500);
-        $fact.animate({opacity: 1.0}, 500);
-        $closeBtn.animate({opacity: 1.0}, 500);
+        if (activeQuestion.categoryId === 'BONUS') {
+          $closeBtn.text('The Winner Is... *** Drum Roll ***');
+        }
+    }
+    function showBonus() {
+      var $question = $("#question");
+
+      var $title = $question.find("> .title");
+      var $timer = $question.find("> .timer");
+      var $scores = $question.find("> .scores");
+
+      var $questionWrapper = $question.find("> .wrapper > .question-wrapper");
+      var $text = $question.find("> .wrapper > .question-wrapper > .text-container > .text");
+      var $choices = $question.find("> .wrapper > .question-wrapper > .text-container > .choices");
+      var $showAnswerBtn = $question.find("> .wrapper > .question-wrapper > .show-answer-btn");
+
+      var $answerWrapper = $question.find("> .wrapper > .answer-wrapper");
+      var $answerText = $question.find("> .wrapper > .answer-wrapper > .answer > .text");
+      var $answerMediaContainer = $question.find("> .wrapper > .answer-wrapper > .answer > .media-container");
+      var $subtitleF = $question.find("> .wrapper > .answer-wrapper > .subtitle-f");
+      var $fact = $question.find("> .wrapper > .answer-wrapper > .fact");
+      
+      var category = 'BONUS';
+      var question = window.bonusQuestions;
+
+      $title.html("<b>BONUS</b>" + "<em>" + 500 + "</em>");
+
+      $questionWrapper.css({ display: "block" });
+      $scores.css({ display: "none" });
+
+      $timer.css({ display: "block" });
+      $timer.find("> .time").text(question.timer + " seconds");
+      $timer.find("> .start-btn").css({ display: "block" });
+      $timer.find("> .stop-btn").css({ display: "none" });
+
+      $question.css({ background: "#f89728" });
+
+      $text.html(question.q.text);
+
+      $choices.removeClass("answer").empty();
+      if (question.q.type === "choice") {
+          for (var i=0; i<question.q.choices.length; i++) {
+              var choice = question.q.choices[i];
+              var prefix;
+              switch (i) {
+              case 0: prefix = "A) "; break;
+              case 1: prefix = "B) "; break;
+              case 2: prefix = "C) "; break;
+              case 3: prefix = "D) "; break;
+              case 4: prefix = "E) "; break;
+              case 5: prefix = "F) "; break;
+              case 6: prefix = "G) "; break;
+              case 9: prefix = "H) "; break;
+              case 10: prefix = "I) "; break;
+              case 11: prefix = "K) "; break;
+              default: break;
+              }
+              var $choice = $("<div class='choice' data-value='" + choice + "'><em>" + prefix + "</em>" + choice + "</div>");
+              if (choice === question.a.text) {
+                  $choice.addClass("answer");
+              }
+              $choices.append($choice);
+          }
+      }
+
+      $question.find("audio").remove();
+      $question.find(".video-container").remove();
+      $question.find(".image-container").remove();
+
+      if (question.q.audioFile) {
+          $text.after("<audio controls preload='none'><source src='" + question.q.audioFile + "' type='audio/mp4' height='32' /></audio>");
+      } else if (question.q.videoFile) {
+          $text.after("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 480px; margin-top: 12px;'><source src='" + question.q.videoFile + "' type='video/mp4' /></video></div>");
+      } else if (question.q.imageFile) {
+          $text.after("<div class='image-container' style='text-align: center;'><img src='" + question.q.imageFile + "' style='height: 480px; margin-top: 12px;' /></div>");
+      }
+      $answerText.html(question.a.text);
+      $fact.html(question.a.funFact);
+
+      if (question.a.audioFile) {
+          $answerMediaContainer.html("<audio controls preload='none'><source src='" + question.a.audioFile + "' type='audio/mp4' height='32' /></audio>");
+      } else if (question.a.videoFile) {
+          $answerMediaContainer.html("<div class='video-container' style='text-align: center;'><video controls preload='none' style='height: 480px; margin-top: 12px;'><source src='" + question.a.videoFile + "' type='video/mp4' /></video></div>");
+      } else if (question.a.imageFile) {
+          $answerMediaContainer.html("<div class='image-container' style='text-align: center;'><img src='" + question.a.imageFile + "' style='height: 480px; margin-top: 12px;' /></div>");
+      }
+      if (question.a.funFact) {
+          $fact.html(question.a.funFact);
+      } else {
+          $fact.empty();
+      }
+      if (question.q.type === "choice") {
+          $choices.css({ display: "block" });
+      } else {
+          $choices.css({ display: "none" });
+      }
+      $questionWrapper.css({ display: "block" });
+      $showAnswerBtn.css({ display: "block" });
+      $answerWrapper.css({ display: "none" });
+
+      $question.css({ display: "table", left: "-100%" }).stop().animate({ left: 0 }, 500);
     }
     function backToBoard() {
         var $question = $("#question");
