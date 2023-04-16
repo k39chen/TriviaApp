@@ -1,0 +1,162 @@
+DATE	2023-04-20									
+CONTRIBUTORS	Dharssan Pushparajah;Nicholas Skupien;Stella Namuyige;Kevin Chen									
+										
+QUESTIONS										
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	FUN FACT	QUESTION MEDIA FILE	ANSWER MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Spring	100	text	What is the name of the famous cartoon rabbit that was created by Warner Bros.?	Bugs Bunny						40
+Spring	200	choice	What animal lays the largest egg?	Ostrich	Ostrich;Bunny;Crocodile;Giant Squid	The ostrich lays the largest egg of any living bird. Ostrich eggs can weigh up to 1.4 kg (3 lbs) and are about 15 cm (6 inches) long.				40
+Spring	300	choice	What is a group of rabbits most commonly called?	Colony	Flock;Cattle;Bunnies;Colony					60
+Spring	400	text	If a groundhog sees its shadow on Groundhog Day, how much longer will it take for Spring to arrive?	Spring will arrive in 6 weeks				60
+Spring	500	text	What holiday is celebrated on May 5th?	Cinco de Mayo				60
+Toronto	100	text	What did Toronto used to be called from 1793 to 1834?	York						40
+Toronto	200	text	In 2013, What new area code was added to Toronto, excluding 647 and 416?	437						40
+Toronto	300	text	Name the six boroughs of Toronto (no part marks).	Etobicoke, Scarborough, Old York / Toronto City, York, North York, East York						60
+Toronto	400	choice	What is the nickname of Casa Loma?	The House on the Hill	The House on the Hill;The Mansion in the Sky;The Palace on the Lake;The Castle in the Forest				60
+Toronto	500	text	The Bata Museum in Toronto is dedicated to displaying exhibits of what items of clothing?	Shoes		4.3 Stars on Google with reviews such as “Its an OK Museum”. Located in U of T.				60
+Reality TV	100	choice	Which show has amateur cooks competing in a series of challenges to be named "Star Baker"?	The Great British Bake Off	Hell's Kitchen;Nailed It!;Chef's Table: Pastry;The Great British Bake Off					40
+Reality TV	200	text	Name the reality show based on the following image.	Love is Blind			2023-04-20/cups.png		40
+Reality TV	300	text	Which Shark Tank investor is known for their nickname as "Mr. Wonderful"?	Kevin O'Leary						60
+Reality TV	400	choice	In RuPaul's Drag Race, what is the name of the challenge in which the contestants must impersonate a celebrity or character in a game show-style setting?	Snatch Game	Reading Challenge;Snatch Game;RuPaul Roast;Celeb Switch					60
+Reality TV	500	text	What is the motto of “Survivor”?	Outwit, Outlast, Outplay	Dasani;Powerade;Snapple;Mr. Pibb					60
+Sports	100	text	In the game of chess, what is the name of the piece that can move any number of squares vertically or horizontally exclusively?	Rook					40
+Sports	200	choice	Which of the following is a "Grand Slam" tennis tournament?	Australian Open	Japan Open;Italian Open;Mexican Open;Australian Open					40
+Sports	300	text	In golf, what is the term for a score of two strokes under par on a hole?	Eagle						60
+Sports	400	text	Who is the NBA's all-time top scorer?	Lebron James						60
+Sports	500	choice	"Toronto Rock" is Toronto's professional lacrosse team. Where do they currently play?	FirstOntario Centre, Hamilton	Scotiabank Arena, Toronto;FirstOntario Centre, Hamilton;Coca Cola Coliseum, Toronto;Paramount Fine Foods Centre, Brampton					60
+Food	100	choice	What country has more Michelin star restaurants than any other country?	France	United States;France;Japan;Brazil	France – A Total of 628 Michelin-Starred Restaurants				40
+Food	200	choice	Which word describes both a type of stew and the type of pot it’s cooked in?	Tagine	Tagine;Goulash;Jambalaya;Instant Pot					40
+Food	300	choice	Which of the following is not a Coca Cola product?	Snapple	Dasani;Powerade;Snapple;Mr. Pibb					60
+Food	400	choice	Most kitchens are equipped with at least one paring knife. What does "pare" mean?	To remove the outer skin of a fruit or vegetable	To divide in half by cutting into two pieces;To remove the bones from meat or fish;To slice into thin strips;To remove the outer skin of a fruit or vegetable					60
+Food	500	text	What components are in a mirepoix?	A mix of diced carrots, celery, and onions.						60
+
+
+GAUNTLET								
+TRACK TITLE	TRACK ARTIST							
+Mr. Brightside	The Killers							
+Ode to Joy	Ludwig Van Beethoven							
+22	Taylor Swift							
+Crazy in Love	Beyonce ft. Jay -Z							
+Call Me Maybe	Carly Rae Jepsen							
+Driver's License	Olivia Rodrigo							
+In Da Club	50 Cent							
+								
+AUDIO FILE	Gauntlet (2022-06-02).m4a							
+
+
+Anything below this area will not be processed by the TriviaApp								
+Orange background indicates VTF keywords								
+								
+FEATURE REQUEST	SUPPORT IMAGES							
+FEATURE REQUEST	Visual timer bar							
+FEATURE REQUEST	Display currently loaded file name							
+FEATURE REQUEST	Ability to read game file from URL							
+FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
+FEATURE REQUEST	Configurable rules displayed on splash screen							
+FEATURE REQUEST	"On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions"							
+FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
+FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
+FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
+FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
+FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
+FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
+FEATURE REQUEST	"When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)"							
+								
+QUESTION IDEAS	"Themes: Game of thrones, sci-fi"							
+QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
+QUESTION IDEAS	Image/Video based questions							
+								
+CRITICISMS	"Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?"							
+CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
+CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
+CRITICISMS	"Some questions were too difficult for their point value. Could have a +/- for answers like ""be within 3 years of the answer"""							
+								
+TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						
+								
+Canadian Trivia Questions and Answers								
+								
+1. WHICH CANADIAN CITY IS CONSIDERED �HOLLYWOOD NORTH�?								
+								
+"While you may think Toronto is the answer, the true (and original) �Hollywood North� is Vancouver!�"								
+People started calling Vancouver �Hollywood North� in the 1970s. The city is second in TV production and third for feature film production in North America. (Los Angeles and New York are first and second).								
+"Vancouver plays host to many American series and movies such as Riverdale, Upload and Deadpool."								
+T.O. is also a popular filming location and is sometimes included as part of �Hollywood North�.�								
+								
+2. HOW MANY POINTS DOES THE MAPLE LEAF ON THE FLAG HAVE?								
+								
+Our flag has 11 points! But here�s a little more Canadian trivia �								
+Did you know the Canadian flag was designed with 13 points? It was changed to 11 points because it was hard to see the maple leaf shape from a distance.								
+								
+3. WHICH CITY IS HOME TO NORTH AMERICA�S LARGEST MALL?								
+								
+"It�s Edmonton, Alberta � home of the West Edmonton Mall. This massive shopping center is 5.3 million square feet and has an entire waterpark within its walls."								
+								
+4. WHICH CANADIAN CHAIN FIRST OPENED IN HAMILTON IN 1964								
+								
+"It�s the Canadian classic, Tim Hortons! And has it ever grown. As of 2020, the coffee chain had over 4,949 restaurants across the globe."								
+								
+5. WHERE IS CANADA�S MOST VISITED NATIONAL HISTORIC SITE?								
+								
+"If you head over to Halifax, Nova Scotia, you can visit the Halifax Citadel National Historic Site of Canada! Built as a military fortification, it�s now a tourist�s paradise. The site has a rich history and a beautiful view of the city.��With it�s history, delicious lobster, and beautiful views, it�s no wonder Halifax made the�23 most magical places Canadians�are visiting during the summer."								
+								
+6. WHICH CITY HOSTS NORTH AMERICA�S LARGEST SINGLE DAY PARADE? (BONUS POINTS IF YOU CAN GUESS THE PARADE!)								
+								
+"It�s the Carabina Grand Parade in Toronto, Ontario! With a parade route of 3.6 km and taking over ten hours from start to finish, it�s definitely a celebration to watch out for. The parade is part of Toronto�s 3-week long Caribbean Caribana festival. The festival started in 1967 and is the biggest cultural festival in North America.�"								
+								
+7. WHAT IS CANADA�S NATIONAL SPORT?								
+								
+"Trick question � We�ve got two! Hockey and Lacrosse are our national sports, as declared by the �National Sports of Canada Act�."								
+"(If you got this one, you may be a Canadian trivia Wiz!)"								
+								
+8. EAT UP! WHICH CITY HAS THE MOST RESTAURANTS PER CAPITA IN CANADA?								
+								
+"Kudos if you guess Victoria, BC! While reports vary, most studies say Victoria leads the pack with 4.6 restaurants per 1,000 people. Runners up include Vancouver, Niagara Falls and Montreal.�"								
+								
+9. WHICH CANADIAN CITY RANKS AS THE MOST EDUCATED IN THE COUNTRY?								
+								
+"With 1/3 of the city�s adult population having a university degree, the answer is our national capital � Ottawa. But that doesn�t mean it�s the most intelligent city in Canada. That award goes to�Winnipeg, Manitoba."								
+								
+10. WHICH CITY WAS HOME TO THE FIRST NORTH AMERICAN YMCA?								
+								
+It all started in Montreal in 1851!								
+"Bonus Canadian Trivia Fact: There are now over 1,000 YMCAs in Canada.�"								
+								
+11. WHAT IS THE MOST PURCHASED GROCERY ITEM IN CANADA?								
+								
+"It�s the Canadian classic, Kraft Dinner! Surveys show it is our nation�s go-to pick when we go shopping, and it�s hard to deny considering how quick and tasty it is."								
+								
+12. WHAT FRUIT DOES CANADA EXPORT THE MOST OF?								
+								
+"The answer is blueberries! Canada exports tens of millions of pounds of blueberries and is the world�s second largest producer of the berry. In fact, blueberries account for 61.2% of our export dollars."								
+								
+13. WHAT IS CANADA�S OLDEST CITY?								
+								
+"Established in 1497, St. Johns, Newfoundland is the oldest city in Canada. The next established city was Quebec City but that wasn�t until 1608."								
+								
+14. HOW MANY TIME ZONES DOES CANADA HAVE?								
+								
+"There are six time zones across Canada: Pacific, Mountain, Central, Eastern, Atlantic, and Newfoundland.�"								
+								
+15. WHICH CANADIAN CITY HAS THE MOST TOURISTS?								
+								
+This honour goes to Toronto with over 27.5 million visitors a year!�								
+								
+"16. ONLY ONE PROVINCE IS OFFICIALLY BILINGUAL, CAN YOU GUESS WHICH ONE?"								
+								
+"Canada, as a country, is officially bilingual, but most provinces are either French or English. New Brunswick is the only province where French and English are both official languages.�"								
+								
+17. HOW MANY OCEANS BORDER CANADA?								
+								
+"There are three oceans total. The Pacific, the Atlantic, and the Arctic all surround our nation.�"								
+								
+18. WHICH PROVINCE IS HOME TO CANADA�S TALLEST MOUNTAIN?								
+								
+"Mount Logan is Canada�s highest peak at 5,959 meters, and it stands tall in the Yukon! It�s also believed to have the largest base circumference in the world.��"								
+The only higher mountain in North America is Denali in Alaska.								
+								
+19. IN WHICH PROVINCE CAN YOU FIND�A PROVINCIAL PARK NAMED �BLOW ME DOWN� AND�THE CITIES OF �GOOBIES� AND �COME BY CHANCE�?								
+								
+These wildly named places are all on the East Coast in the province of Newfoundland! This picture specifically is from Blow Me Down Provincial Park.								
+								
+20. Last One! 80% of the world�s supply of what comes from Canada?								
+								
+80% of the world�s supply of maple syrup comes from Canada! Eat up!								
