@@ -303,7 +303,7 @@ $(document).ready(function() {
         var categoryColors = [
             "#115744",
             "#1C8DA3",
-            "#AED457",
+            "#DB5461",
             "#729C14",
             "#CA5215"
         ];
@@ -1012,6 +1012,11 @@ $(document).ready(function() {
 
         // mark this question as masked
         $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass("masked");
+
+        var seed = Math.floor(Math.random() * 99);
+        if (seed < 33) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-1');
+        if (seed >= 33 && seed < 66) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-2');
+        if (seed >= 66) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-3');
 
         $question.css({ left: 0 }).animate({ left: "100%" }, 500, function() {
             $(this).css({ display: "none" });

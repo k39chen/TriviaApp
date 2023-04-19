@@ -3,44 +3,44 @@ CONTRIBUTORS	Dharssan Pushparajah;Nicholas Skupien;Stella Namuyige;Kevin Chen
 										
 QUESTIONS										
 CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	FUN FACT	QUESTION MEDIA FILE	ANSWER MEDIA FILE	HALF ALLOWED	TIME LIMIT
-Spring	100	text	What is the name of the famous cartoon rabbit that was created by Warner Bros.?	Bugs Bunny						40
-Spring	200	choice	What animal lays the largest egg?	Ostrich	Ostrich;Bunny;Crocodile;Giant Squid	The ostrich lays the largest egg of any living bird. Ostrich eggs can weigh up to 1.4 kg (3 lbs) and are about 15 cm (6 inches) long.				40
+Spring	100	text	What is the name of the famous cartoon rabbit that was created by Warner Bros.?	Bugs Bunny				2023-04-20/buggs.png		40
+Spring	200	choice	Which animal lays the largest egg?	Ostrich	Ostrich;Bunny;Crocodile;Giant Squid	The ostrich lays the largest egg of any living bird. Ostrich eggs can weigh up to 1.4 kg (3 lbs) and are about 15 cm (6 inches) long.				40
 Spring	300	choice	What is a group of rabbits most commonly called?	Colony	Flock;Cattle;Bunnies;Colony					60
-Spring	400	text	If a groundhog sees its shadow on Groundhog Day, how much longer will it take for Spring to arrive?	Spring will arrive in 6 weeks				60
-Spring	500	text	What holiday is celebrated on May 5th?	Cinco de Mayo				60
+Spring	400	text	Which holiday is celebrated on May 5th?	Cinco de Mayo				2023-04-20/cinco.png	60
+Spring	500	text	If a groundhog sees its shadow on Groundhog Day, how much longer will it take for Spring to arrive?	Spring will arrive in 6 weeks				60
 Toronto	100	text	What did Toronto used to be called from 1793 to 1834?	York						40
-Toronto	200	text	In 2013, What new area code was added to Toronto, excluding 647 and 416?	437						40
-Toronto	300	text	Name the six boroughs of Toronto (no part marks).	Etobicoke, Scarborough, Old York / Toronto City, York, North York, East York						60
-Toronto	400	choice	What is the nickname of Casa Loma?	The House on the Hill	The House on the Hill;The Mansion in the Sky;The Palace on the Lake;The Castle in the Forest				60
+Toronto	200	text	In 2013, what new area code was added to Toronto (excluding 647 and 416)?	437						40
+Toronto	300	text	Name the six boroughs of Toronto (no part marks).	Etobicoke, Scarborough, Old York / Toronto City, York, North York, East York				2023-04-20/boroughs.png	60
+Toronto	400	choice	What is the nickname of Casa Loma?	The House on the Hill	The Mansion in the Sky;The Palace on the Lake;The House on the Hill;The Castle in the Forest				60
 Toronto	500	text	The Bata Museum in Toronto is dedicated to displaying exhibits of what items of clothing?	Shoes		4.3 Stars on Google with reviews such as “Its an OK Museum”. Located in U of T.				60
 Reality TV	100	choice	Which show has amateur cooks competing in a series of challenges to be named "Star Baker"?	The Great British Bake Off	Hell's Kitchen;Nailed It!;Chef's Table: Pastry;The Great British Bake Off					40
 Reality TV	200	text	Name the reality show based on the following image.	Love is Blind			2023-04-20/cups.png		40
-Reality TV	300	text	Which Shark Tank investor is known for their nickname as "Mr. Wonderful"?	Kevin O'Leary						60
-Reality TV	400	choice	In RuPaul's Drag Race, what is the name of the challenge in which the contestants must impersonate a celebrity or character in a game show-style setting?	Snatch Game	Reading Challenge;Snatch Game;RuPaul Roast;Celeb Switch					60
-Reality TV	500	text	What is the motto of “Survivor”?	Outwit, Outlast, Outplay	Dasani;Powerade;Snapple;Mr. Pibb					60
-Sports	100	text	In the game of chess, what is the name of the piece that can move any number of squares vertically or horizontally exclusively?	Rook					40
-Sports	200	choice	Which of the following is a "Grand Slam" tennis tournament?	Australian Open	Japan Open;Italian Open;Mexican Open;Australian Open					40
+Reality TV	300	text	Which Shark Tank investor is known for their nickname as <br/>"Mr. Wonderful"?	Kevin O'Leary				2023-04-20/wonderful-with-egg.png		60
+Reality TV	400	choice	In "RuPaul's Drag Race", what is the name of the challenge in which the contestants must impersonate a celebrity or character in a game-show-style setting?	Snatch Game	Reading Challenge;Snatch Game;RuPaul Roast;Celeb Switch					60
+Reality TV	500	text	What is the motto of “Survivor”?	Outwit, Outlast, Outplay				2023-04-20/survivor.png		60
+Sports	100	text	In the game of chess, what is the name of the piece that can move any number of squares vertically or horizontally, exclusively?	Rook				2023-04-20/rook.png	40
+Sports	200	choice	Which of the following is a "Grand Slam" tennis tournament?	Australian Open	Japan Open;Australian Open;Italian Open;Mexican Open					40
 Sports	300	text	In golf, what is the term for a score of two strokes under par on a hole?	Eagle						60
 Sports	400	text	Who is the NBA's all-time top scorer?	Lebron James						60
-Sports	500	choice	"Toronto Rock" is Toronto's professional lacrosse team. Where do they currently play?	FirstOntario Centre, Hamilton	Scotiabank Arena, Toronto;FirstOntario Centre, Hamilton;Coca Cola Coliseum, Toronto;Paramount Fine Foods Centre, Brampton					60
+Sports	500	choice	Where does the "Toronto Rock" play?	FirstOntario Centre, Hamilton	Scotiabank Arena, Toronto;FirstOntario Centre, Hamilton;Coca Cola Coliseum, Toronto;Paramount Fine Foods Centre, Brampton					60
 Food	100	choice	What country has more Michelin star restaurants than any other country?	France	United States;France;Japan;Brazil	France – A Total of 628 Michelin-Starred Restaurants				40
-Food	200	choice	Which word describes both a type of stew and the type of pot it’s cooked in?	Tagine	Tagine;Goulash;Jambalaya;Instant Pot					40
-Food	300	choice	Which of the following is not a Coca Cola product?	Snapple	Dasani;Powerade;Snapple;Mr. Pibb					60
+Food	200	choice	Which word describes both a type of stew and the type of pot it’s cooked in?	Tagine	Goulash;Tagine;Jambalaya;Instant Pot			2023-04-20/tagine-with-egg.png		40
+Food	300	choice	Which of the following is not a Coca Cola product?	Snapple	Dasani;Powerade;Snapple;Mr. Pibb			2023-04-20/snapple.png		60
 Food	400	choice	Most kitchens are equipped with at least one paring knife. What does "pare" mean?	To remove the outer skin of a fruit or vegetable	To divide in half by cutting into two pieces;To remove the bones from meat or fish;To slice into thin strips;To remove the outer skin of a fruit or vegetable					60
-Food	500	text	What components are in a mirepoix?	A mix of diced carrots, celery, and onions.						60
+Food	500	text	What components are in a mirepoix?	Carrots, celery, and onions.				2023-04-20/mirepoix.png		60
 
 
 GAUNTLET								
 TRACK TITLE	TRACK ARTIST							
-Mr. Brightside	The Killers							
-Ode to Joy	Ludwig Van Beethoven							
-22	Taylor Swift							
-Crazy in Love	Beyonce ft. Jay -Z							
-Call Me Maybe	Carly Rae Jepsen							
-Driver's License	Olivia Rodrigo							
-In Da Club	50 Cent							
+Blank Space	Taylor Swift							
+Für Elise	Beethoven							
+Still D.R.E.	Dr Dre. ft. Snoop Dogg							
+Butter	BTS (방탄소년단)							
+Paparazzi	Lady Gaga							
+Say My Name	Destiny's Child							
+Take Me Home, Country Roads	John Denver							
 								
-AUDIO FILE	Gauntlet (2022-06-02).m4a							
+AUDIO FILE	Gauntlet (2023-04-20).mp3							
 
 
 Anything below this area will not be processed by the TriviaApp								
