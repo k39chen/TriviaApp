@@ -62,14 +62,17 @@ $(document).ready(function() {
         showScreen("home");
     });
     $("#board > .scores").on("click", "> .finish-btn", function(ev) {
-      activeQuestion = {
-          categoryId: 'BONUS',
-          questionId: 500,
-          question: window.bonusQuestions
-      };
+        activeQuestion = {
+            categoryId: 'BONUS',
+            questionId: 500,
+            question: window.bonusQuestions
+        };
 
-        showScreen("bonus");
-        // showBonus();
+        if (window.bonusQuestions.tracks.length === 0) {
+            showScreen("scores");
+        } else {
+            showScreen("bonus");
+        }
     });
     $("#bonus").on("click", "> .back-btn", function(ev) {
         var $board = $("#board");

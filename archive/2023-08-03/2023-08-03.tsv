@@ -1,0 +1,159 @@
+DATE	2023-08-03									
+CONTRIBUTORS	Nicholas Skupien;Hamza Yousaf;Kevin Chen									
+										
+QUESTIONS										
+CATEGORY	SCORE VALUE	QUESTION TYPE	QUESTION TEXT	ANSWER	MULTIPLE CHOICES	FUN FACT	QUESTION MEDIA FILE	ANSWER MEDIA FILE	HALF ALLOWED	TIME LIMIT
+Baby Facts	100	choice	Where is the human baby's soft spot located?	Skull	Wrist;Skull;Spine;Thigh	The smaller spot at the back usually closes by age 2 to 3 months, the larger spot toward the front often closes around age 18 months.				60
+Baby Facts	200	choice	How many bones are human babies born with?	300	250;300;350;400	These eventually fuse (grow together) to form the 206 bones that adults have.				60
+Baby Facts	300	choice	What is the first color human babies recognize?	Red	Blue;Green;Red;Yellow					60
+Baby Facts	400	text	What bones are human babies born without?	Kneecaps						60
+Baby Facts	500	text	What is the world record for the weight of the heaviest human baby?	22 lbs 8 oz		Born in Aversa, Italy in September 1955				60
+
+Famous Parents	100	choice	Which famous actor is the son of the actor Jerry Stiller?	Ben Stiller	Ben Stiller;Nicholas Stiller;Filip Stiller;Al Stiller	They have worked together on 11 movies.				60
+Famous Parents	200	text	Which pregnant singer performed at the Super Bowl halftime show in 2023?	Rihanna		Her performance is officially the most-watched halftime show performance of all time				60
+Famous Parents	300	text	What are the names of Harry Potter's parents?	Lily and James Potter		Voldemort tried to recruit them as Death Eaters				60
+Famous Parents	400	choice	Who was the last female to win a Women's Singles Grand Slam title in tennis after becoming a mother?	Kim Clijsters	Serena Williams;Angelique Kerber;Venus Williams;Kim Clijsters	Serena Williams was eight weeks pregnant when she won the Australian Open, competed in 4 finals after giving birth, but never won a grand slam as a mother				60
+Famous Parents	500	text	Which celebrity couple named their child Blue Ivy?	Jay Z and Beyonce						60
+
+Nursery Rhymes	100	text	How many bags of wool does the black sheep have?	3						60
+Nursery Rhymes	200	text	Little Bo Peep lost something. What was it?	Her sheep						60
+Nursery Rhymes	300	text	Who couldn’t put Humpty back together again?	All the king’s horses and all the king’s men						60
+Nursery Rhymes	400	text	Who sat down next to Little Miss Muffet?	A spider		Little Miss Muffet was first recorded in 1805.				60
+Nursery Rhymes	500	text	At what time of night does Wee Willie Winkie check to make sure children are in their beds?	8 o' clock						60
+
+Baby Animals	100	choice	What is a baby duck called?	Duckling	Puppy;Duckling;Fawn;Calf					60
+Baby Animals	200	choice	Cygnet is the baby of which type of bird?	Swan	Swan;Cardinal;Peregrine Falcon;Toucan	A cygnet is capable of running and swimming a few hours after hatching				60
+Baby Animals	300	choice	What is a baby rabbit called?	Kitten	Fledgling;Colt;Joey;Kitten					60
+Baby Animals	400	text	What is the name of the stage in a frog's life cycle between tadpole and frog?	Froglet		Shortly after growing legs, tadpoles begin absorbing their tail in the froglet stage of life				60
+Baby Animals	500	text	What is a baby oyster called?	Spat		Spats are less than one inch long				60
+
+Baby Pop-Culture	100	choice	Which 2017 movie has Alec Baldwin portraying a baby?	Boss Baby	Baby's Day Out;Boss Baby;Dumbo;Monsters Inc	The baby sounds used in the movie are stock sounds				60
+Baby Pop-Culture	200	text	Which 2004 animated film features a green ogre and his wife welcoming triplets?	Shrek 2		Last Shrek film to be released on VHS				60
+Baby Pop-Culture	300	text	The song "Sweet Child O' Mine" was a massive hit for which rock band in the 1980s?	Guns N' Roses		Sweet Child O' Mine was written in just 5 minutes				60
+Baby Pop-Culture	400	choice	Which of these Rugrats characters is the oldest?	Angelica	Angelica;Tommy;Lillian;Chuckie	At one point, Elizabeth Daily, who voices Tommy Pickles, recorded her dialogs in between contractions				60
+Baby Pop-Culture	500	text	What is the name of the "The Child" (also known as Baby Yoda) in the the tv series Mandalorian?	Grogu		While still an infant, Grogu is 50 years old				60
+
+
+GAUNTLET								
+TRACK TITLE	TRACK ARTIST							
+								
+AUDIO FILE								
+
+
+Anything below this area will not be processed by the TriviaApp								
+Orange background indicates VTF keywords								
+								
+FEATURE REQUEST	SUPPORT IMAGES							
+FEATURE REQUEST	Visual timer bar							
+FEATURE REQUEST	Display currently loaded file name							
+FEATURE REQUEST	Ability to read game file from URL							
+FEATURE REQUEST	Store previously loaded game files in localStorage (re-uploading overrides localStorage item)							
+FEATURE REQUEST	Configurable rules displayed on splash screen							
+FEATURE REQUEST	"On question screen, Ctrl+Space advances to next step (ie. Show Answer/Back to Questions) -- gives more screen real estate for image/video related questions"							
+FEATURE REQUEST	Implement horizontal scrollable scoreboard peek to allow for longer team names							
+FEATURE REQUEST	Implement admin screen (Ctrl+A to invoke slide-down screen)							
+FEATURE REQUEST	Admin Screen: Print screen for final score (file name is based on VTF date)							
+FEATURE REQUEST	Admin Screen: Manually override team scores (in case of accidental input)							
+FEATURE REQUEST	Admin Screen: Display/export final score stats (which teams got which questions right) and output as CSV (file name is based on VTF date)							
+FEATURE REQUEST	Audio clip available on final screen which plays closing song (defined by VTF format)							
+FEATURE REQUEST	"When opening a question that was already scored, the teams that scored points from it before should already be highlighted (for when we miss a team)"							
+								
+QUESTION IDEAS	"Themes: Game of thrones, sci-fi"							
+QUESTION IDEAS	Guess song/artist from two lines of lyrics.							
+QUESTION IDEAS	Image/Video based questions							
+								
+CRITICISMS	"Most categories were catered to younger audience. Maybe specialized category for older members of audience, like '80s pop culture?"							
+CRITICISMS	Need to be more clear what answers are considered acceptable before answer is revealed. ie. Jay Z's full name requires middle name inclusion or is first name/last name sufficient? (anticipate questions like this and consider if we need halfAllowed)							
+CRITICISMS	How important is spelling? Is it ok if it's phonetically correct? Need to be consistent for all questions							
+CRITICISMS	"Some questions were too difficult for their point value. Could have a +/- for answers like ""be within 3 years of the answer"""							
+								
+TIE BREAKER	REVISE ANSWER	How many people currently work at Veeva?						
+								
+Canadian Trivia Questions and Answers								
+								
+1. WHICH CANADIAN CITY IS CONSIDERED �HOLLYWOOD NORTH�?								
+								
+"While you may think Toronto is the answer, the true (and original) �Hollywood North� is Vancouver!�"								
+People started calling Vancouver �Hollywood North� in the 1970s. The city is second in TV production and third for feature film production in North America. (Los Angeles and New York are first and second).								
+"Vancouver plays host to many American series and movies such as Riverdale, Upload and Deadpool."								
+T.O. is also a popular filming location and is sometimes included as part of �Hollywood North�.�								
+								
+2. HOW MANY POINTS DOES THE MAPLE LEAF ON THE FLAG HAVE?								
+								
+Our flag has 11 points! But here�s a little more Canadian trivia �								
+Did you know the Canadian flag was designed with 13 points? It was changed to 11 points because it was hard to see the maple leaf shape from a distance.								
+								
+3. WHICH CITY IS HOME TO NORTH AMERICA�S LARGEST MALL?								
+								
+"It�s Edmonton, Alberta � home of the West Edmonton Mall. This massive shopping center is 5.3 million square feet and has an entire waterpark within its walls."								
+								
+4. WHICH CANADIAN CHAIN FIRST OPENED IN HAMILTON IN 1964								
+								
+"It�s the Canadian classic, Tim Hortons! And has it ever grown. As of 2020, the coffee chain had over 4,949 restaurants across the globe."								
+								
+5. WHERE IS CANADA�S MOST VISITED NATIONAL HISTORIC SITE?								
+								
+"If you head over to Halifax, Nova Scotia, you can visit the Halifax Citadel National Historic Site of Canada! Built as a military fortification, it�s now a tourist�s paradise. The site has a rich history and a beautiful view of the city.��With it�s history, delicious lobster, and beautiful views, it�s no wonder Halifax made the�23 most magical places Canadians�are visiting during the summer."								
+								
+6. WHICH CITY HOSTS NORTH AMERICA�S LARGEST SINGLE DAY PARADE? (BONUS POINTS IF YOU CAN GUESS THE PARADE!)								
+								
+"It�s the Carabina Grand Parade in Toronto, Ontario! With a parade route of 3.6 km and taking over ten hours from start to finish, it�s definitely a celebration to watch out for. The parade is part of Toronto�s 3-week long Caribbean Caribana festival. The festival started in 1967 and is the biggest cultural festival in North America.�"								
+								
+7. WHAT IS CANADA�S NATIONAL SPORT?								
+								
+"Trick question � We�ve got two! Hockey and Lacrosse are our national sports, as declared by the �National Sports of Canada Act�."								
+"(If you got this one, you may be a Canadian trivia Wiz!)"								
+								
+8. EAT UP! WHICH CITY HAS THE MOST RESTAURANTS PER CAPITA IN CANADA?								
+								
+"Kudos if you guess Victoria, BC! While reports vary, most studies say Victoria leads the pack with 4.6 restaurants per 1,000 people. Runners up include Vancouver, Niagara Falls and Montreal.�"								
+								
+9. WHICH CANADIAN CITY RANKS AS THE MOST EDUCATED IN THE COUNTRY?								
+								
+"With 1/3 of the city�s adult population having a university degree, the answer is our national capital � Ottawa. But that doesn�t mean it�s the most intelligent city in Canada. That award goes to�Winnipeg, Manitoba."								
+								
+10. WHICH CITY WAS HOME TO THE FIRST NORTH AMERICAN YMCA?								
+								
+It all started in Montreal in 1851!								
+"Bonus Canadian Trivia Fact: There are now over 1,000 YMCAs in Canada.�"								
+								
+11. WHAT IS THE MOST PURCHASED GROCERY ITEM IN CANADA?								
+								
+"It�s the Canadian classic, Kraft Dinner! Surveys show it is our nation�s go-to pick when we go shopping, and it�s hard to deny considering how quick and tasty it is."								
+								
+12. WHAT FRUIT DOES CANADA EXPORT THE MOST OF?								
+								
+"The answer is blueberries! Canada exports tens of millions of pounds of blueberries and is the world�s second largest producer of the berry. In fact, blueberries account for 61.2% of our export dollars."								
+								
+13. WHAT IS CANADA�S OLDEST CITY?								
+								
+"Established in 1497, St. Johns, Newfoundland is the oldest city in Canada. The next established city was Quebec City but that wasn�t until 1608."								
+								
+14. HOW MANY TIME ZONES DOES CANADA HAVE?								
+								
+"There are six time zones across Canada: Pacific, Mountain, Central, Eastern, Atlantic, and Newfoundland.�"								
+								
+15. WHICH CANADIAN CITY HAS THE MOST TOURISTS?								
+								
+This honour goes to Toronto with over 27.5 million visitors a year!�								
+								
+"16. ONLY ONE PROVINCE IS OFFICIALLY BILINGUAL, CAN YOU GUESS WHICH ONE?"								
+								
+"Canada, as a country, is officially bilingual, but most provinces are either French or English. New Brunswick is the only province where French and English are both official languages.�"								
+								
+17. HOW MANY OCEANS BORDER CANADA?								
+								
+"There are three oceans total. The Pacific, the Atlantic, and the Arctic all surround our nation.�"								
+								
+18. WHICH PROVINCE IS HOME TO CANADA�S TALLEST MOUNTAIN?								
+								
+"Mount Logan is Canada�s highest peak at 5,959 meters, and it stands tall in the Yukon! It�s also believed to have the largest base circumference in the world.��"								
+The only higher mountain in North America is Denali in Alaska.								
+								
+19. IN WHICH PROVINCE CAN YOU FIND�A PROVINCIAL PARK NAMED �BLOW ME DOWN� AND�THE CITIES OF �GOOBIES� AND �COME BY CHANCE�?								
+								
+These wildly named places are all on the East Coast in the province of Newfoundland! This picture specifically is from Blow Me Down Provincial Park.								
+								
+20. Last One! 80% of the world�s supply of what comes from Canada?								
+								
+80% of the world�s supply of maple syrup comes from Canada! Eat up!								
