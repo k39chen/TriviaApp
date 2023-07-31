@@ -90,7 +90,7 @@ input[type="text"]:active, input[type="text"]:focus {
     color: #999;
 }
 #home > .wrapper > .subtitle {
-    width: 720px;
+    width: 750px;
     line-height: 1.25em;
     margin: 64px auto 48px auto;
     text-align: left;

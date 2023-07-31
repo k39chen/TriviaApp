@@ -779,7 +779,19 @@ $(document).ready(function() {
         var category = questions[categoryId];
         var question = category[questionId];
 
-        $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
+        if (_.isEqual(category.category, "Baby Facts")) {
+            $title.html("<b>Baby Facts</b>" + "<em>" + questionId + "</em>");
+        } else if (_.isEqual(category.category, "Famous Parents")) {
+            $title.html("<b>Parents</b>" + "<em>" + questionId + "</em>");
+        } else if (_.isEqual(category.category, "Nursery Rhymes")) {
+            $title.html("<b>Rhymes</b>" + "<em>" + questionId + "</em>");
+        } else if (_.isEqual(category.category, "Baby Animals")) {
+            $title.html("<b>Animals</b>" + "<em>" + questionId + "</em>");
+        } else if (_.isEqual(category.category, "Baby Pop-Culture")) {
+            $title.html("<b>Baby Pop</b>" + "<em>" + questionId + "</em>");
+        } else {
+            $title.html("<b>" + category.category + "</b>" + "<em>" + questionId + "</em>");
+        }
         $questionWrapper.css({ display: "block" });
         $scores.css({ display: "none" });
 
