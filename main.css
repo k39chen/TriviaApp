@@ -335,15 +335,47 @@ input[type="text"]:active, input[type="text"]:focus {
 }
 
 #board > .questions > .category > .question > .wrapper.masked.masked-1::after {
-    background-image: url('media/2023-04-20/chicken.png');
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_1.png');
 }
 
 #board > .questions > .category > .question > .wrapper.masked.masked-2::after {
-    background-image: url('media/2023-04-20/eggies.png');
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_2.png');
 }
 
 #board > .questions > .category > .question > .wrapper.masked.masked-3::after {
-    background-image: url('media/2023-04-20/snail-mail.png');
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_3.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-4::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_4.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-5::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_5.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-6::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_6.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-7::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_7.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-8::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_8.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-9::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_9.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-10::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_10.png');
+}
+
+#board > .questions > .category > .question > .wrapper.masked.masked-11::after {
+    background-image: url('media/2023-08-03 - Brenda Baby Shower/stickers/Sticker_11.png');
 }
 
 #board > .questions > .category > .question > .wrapper:not(.masked):hover {
@@ -689,11 +721,11 @@ input[type="text"]:active, input[type="text"]:focus {
     width: 20%;
     height: 100%;
 }
-#home > .bg > .panel[data-value="1"], #scores > .bg > .panel[data-value="1"] { background: #115744; }
-#home > .bg > .panel[data-value="2"], #scores > .bg > .panel[data-value="2"] { background: #1C8DA3; }
-#home > .bg > .panel[data-value="3"], #scores > .bg > .panel[data-value="3"] { background: #DB5461; }
-#home > .bg > .panel[data-value="4"], #scores > .bg > .panel[data-value="4"] { background: #729C14; }
-#home > .bg > .panel[data-value="5"], #scores > .bg > .panel[data-value="5"] { background: #CA5215; }
+#home > .bg > .panel[data-value="1"], #scores > .bg > .panel[data-value="1"] { background: #E9D784; }
+#home > .bg > .panel[data-value="2"], #scores > .bg > .panel[data-value="2"] { background: #E17886; }
+#home > .bg > .panel[data-value="3"], #scores > .bg > .panel[data-value="3"] { background: #F7B4C6; }
+#home > .bg > .panel[data-value="4"], #scores > .bg > .panel[data-value="4"] { background: #93CBD3; }
+#home > .bg > .panel[data-value="5"], #scores > .bg > .panel[data-value="5"] { background: #C2D78A; }
 
 /** HOME SCREEN MANAGEMENT **/
 #home.active { display: table; }

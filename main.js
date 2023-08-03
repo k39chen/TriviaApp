@@ -68,11 +68,11 @@ $(document).ready(function() {
             question: window.bonusQuestions
         };
 
-        if (window.bonusQuestions.tracks.length === 0) {
-            showScreen("scores");
-        } else {
-            showScreen("bonus");
-        }
+        // if (window.bonusQuestions.tracks.length === 0) {
+        //     showScreen("scores");
+        // } else {
+        showScreen("bonus");
+        // }
     });
     $("#bonus").on("click", "> .back-btn", function(ev) {
         var $board = $("#board");
@@ -304,11 +304,11 @@ $(document).ready(function() {
         }
         var tsvRows = cleanTSVRows(tsvData, rowIndexStart, rowIndexEnd);
         var categoryColors = [
-            "#115744",
-            "#1C8DA3",
-            "#DB5461",
-            "#729C14",
-            "#CA5215"
+            "#E9D784",
+            "#E17886",
+            "#F7B4C6",
+            "#93CBD3",
+            "#C2D78A"
         ];
         var colIndexMapping = {
             "CATEGORY": 0,
@@ -1028,10 +1028,18 @@ $(document).ready(function() {
         // mark this question as masked
         $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass("masked");
 
-        var seed = Math.floor(Math.random() * 99);
-        if (seed < 33) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-1');
-        if (seed >= 33 && seed < 66) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-2');
-        if (seed >= 66) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-3');
+        var seed = Math.floor(Math.random() * 11);
+        if (seed === 0) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-1');
+        if (seed === 1) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-2');
+        if (seed === 2) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-3');
+        if (seed === 3) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-4');
+        if (seed === 4) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-5');
+        if (seed === 5) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-6');
+        if (seed === 6) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-7');
+        if (seed === 7) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-8');
+        if (seed === 8) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-9');
+        if (seed === 9) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-10');
+        if (seed === 10) $(".category[value='" + activeQuestion.categoryId + "'] > .question[value='" + activeQuestion.questionId + "'] > .wrapper").addClass('masked-11');
 
         $question.css({ left: 0 }).animate({ left: "100%" }, 500, function() {
             $(this).css({ display: "none" });

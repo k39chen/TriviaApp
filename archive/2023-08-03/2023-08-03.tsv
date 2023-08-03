@@ -7,7 +7,7 @@ Baby Facts	100	choice	Where is the human baby's soft spot located?	Skull	Wrist;S
 Baby Facts	200	choice	How many bones are human babies born with?	300	250;300;350;400	These eventually fuse (grow together) to form the 206 bones that adults have.				60
 Baby Facts	300	choice	What is the first color human babies recognize?	Red	Blue;Green;Red;Yellow					60
 Baby Facts	400	text	What bones are human babies born without?	Kneecaps						60
-Baby Facts	500	text	What is the world record for the weight of the heaviest human baby?	22 lbs 8 oz		Born in Aversa, Italy in September 1955				60
+Baby Facts	500	text	What is the world record for the weight of the heaviest human baby (within 2 lbs)?	22 lbs 8 oz		Born in Aversa, Italy in September 1955				60
 
 Famous Parents	100	choice	Which famous actor is the son of the actor Jerry Stiller?	Ben Stiller	Ben Stiller;Nicholas Stiller;Filip Stiller;Al Stiller	They have worked together on 11 movies.				60
 Famous Parents	200	text	Which pregnant singer performed at the Super Bowl halftime show in 2023?	Rihanna		Her performance is officially the most-watched halftime show performance of all time				60
@@ -25,13 +25,13 @@ Baby Animals	100	choice	What is a baby duck called?	Duckling	Puppy;Duckling;Fawn
 Baby Animals	200	choice	Cygnet is the baby of which type of bird?	Swan	Swan;Cardinal;Peregrine Falcon;Toucan	A cygnet is capable of running and swimming a few hours after hatching				60
 Baby Animals	300	choice	What is a baby rabbit called?	Kitten	Fledgling;Colt;Joey;Kitten					60
 Baby Animals	400	text	What is the name of the stage in a frog's life cycle between tadpole and frog?	Froglet		Shortly after growing legs, tadpoles begin absorbing their tail in the froglet stage of life				60
-Baby Animals	500	text	What is a baby oyster called?	Spat		Spats are less than one inch long				60
+Baby Animals	500	text	What is a baby oyster called?	Spat		Spats are less than one-inch long				60
 
 Baby Pop-Culture	100	choice	Which 2017 movie has Alec Baldwin portraying a baby?	Boss Baby	Baby's Day Out;Boss Baby;Dumbo;Monsters Inc	The baby sounds used in the movie are stock sounds				60
 Baby Pop-Culture	200	text	Which 2004 animated film features a green ogre and his wife welcoming triplets?	Shrek 2		Last Shrek film to be released on VHS				60
 Baby Pop-Culture	300	text	The song "Sweet Child O' Mine" was a massive hit for which rock band in the 1980s?	Guns N' Roses		Sweet Child O' Mine was written in just 5 minutes				60
 Baby Pop-Culture	400	choice	Which of these Rugrats characters is the oldest?	Angelica	Angelica;Tommy;Lillian;Chuckie	At one point, Elizabeth Daily, who voices Tommy Pickles, recorded her dialogs in between contractions				60
-Baby Pop-Culture	500	text	What is the name of the "The Child" (also known as Baby Yoda) in the the tv series Mandalorian?	Grogu		While still an infant, Grogu is 50 years old				60
+Baby Pop-Culture	500	text	What is the name of the "The Child" (also known as Baby Yoda) in the the TV series Mandalorian?	Grogu		While still an infant, Grogu is 50 years old				60
 
 
 GAUNTLET								
